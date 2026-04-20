@@ -1,0 +1,9 @@
+{
+  "fsdp_sharding_strategy": "FULL_SHARD",
+  "fsdp_backward_prefetch": "BACKWARD_PRE",
+  "fsdp_activation_checkpointing": false,
+  "fsdp_offload_params": false,
+  "use_orig_params": true,
+  "mixed_precision": "bf16",
+  "fsdp_state_dict_type": "FULL_STATE_DICT"
+}
