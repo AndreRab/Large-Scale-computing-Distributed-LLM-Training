@@ -55,6 +55,7 @@ srun torchrun \
   --dataset_config wikitext-2-raw-v1 \
   --epochs 1 \
   --batch_size 1 \
+  --max_steps 5 \
   --output_dir ./test_out
 
 echo "=== DIAGNOSTYKA KONIEC: $(date) ==="

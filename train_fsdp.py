@@ -1,4 +1,4 @@
-"""
+r"""
 Fine‑tuning script for large language models using PyTorch's Fully Sharded
 Data Parallel (FSDP) API.  This example is designed to run on the Athena
 cluster of the Polish national PL‑Grid infrastructure.  Models in the
@@ -34,16 +34,17 @@ allocates resources and ``torchrun`` handles the rendezvous across nodes.
 
 import argparse
 import os
+from functools import partial
 import torch
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
-from torch.distributed._composable.fsdp import fully_shard, FSDPModule
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import load_dataset
 
 # Dodane importy do prawidłowego zapisu wag w FSDP
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
-from torch.distributed.fsdp import FullStateDictConfig, StateDictType
+from torch.distributed.fsdp import FullStateDictConfig, MixedPrecision, StateDictType
+from torch.distributed.fsdp.wrap import size_based_auto_wrap_policy
 
 
 
@@ -77,6 +78,7 @@ def main() -> None:
     parser.add_argument("--fp16", action="store_true", help="Enable FP16 mixed precision")
     parser.add_argument("--lr", type=float, default=5e-5, help="Learning rate")
     parser.add_argument("--output_dir", type=str, default="./fsdp_output", help="Directory to save the fine‑tuned model")
+    parser.add_argument("--max_steps", type=int, default=-1, help="Stop after this many optimizer steps; useful for cluster smoke tests")
     args = parser.parse_args()
 
     # Initialise the distributed process group.  ``torchrun`` sets
@@ -98,13 +100,24 @@ def main() -> None:
     dtype = torch.float16 if args.fp16 else torch.float32
     model = AutoModelForCausalLM.from_pretrained(args.model_name, torch_dtype=dtype)
 
-    # Wrap the model with FSDP.  We call ``fully_shard`` on the model
-    # which recursively wraps submodules and shards parameters, gradients
+    # Use one FSDP API consistently. The previous composable FSDP wrapping
+    # crashed during classic FSDP full-state-dict checkpoint saving.
     # and optimiser state across all ranks【436250730084965†L279-L320】.  The result is an
-    # FSDPModule that behaves like a normal PyTorch module.
-    fully_shard(model)
-    assert isinstance(model, FSDPModule)
-    model.to(device)
+    auto_wrap_policy = partial(size_based_auto_wrap_policy, min_num_params=100_000_000)
+    mixed_precision = None
+    if args.fp16:
+        mixed_precision = MixedPrecision(
+            param_dtype=torch.float16,
+            reduce_dtype=torch.float16,
+            buffer_dtype=torch.float16,
+        )
+    model = FSDP(
+        model,
+        auto_wrap_policy=auto_wrap_policy,
+        device_id=device,
+        mixed_precision=mixed_precision,
+        use_orig_params=True,
+    )
 
     # Load and preprocess the dataset.  We use Wikitext by default but any
     # text dataset on the hub can be specified.  The map call will
@@ -137,6 +150,7 @@ def main() -> None:
 
     optimiser = torch.optim.AdamW(model.parameters(), lr=args.lr)
     model.train()
+    global_step = 0
     for epoch in range(args.epochs):
         sampler.set_epoch(epoch)
         for step, batch in enumerate(dataloader):
@@ -147,8 +161,13 @@ def main() -> None:
             optimiser.zero_grad()
             loss.backward()
             optimiser.step()
+            global_step += 1
             if step % 10 == 0 and torch.distributed.get_rank() == 0:
                 print(f"Epoch {epoch+1}, step {step}, loss={loss.item():.4f}")
+            if args.max_steps > 0 and global_step >= args.max_steps:
+                break
+        if args.max_steps > 0 and global_step >= args.max_steps:
+            break
 
     # Save only on rank 0 to avoid race conditions.  FSDP returns
     # sharded state dicts by default; gather them to CPU before saving.
@@ -166,6 +185,8 @@ def main() -> None:
         #state_dict = model.state_dict(gather_dtensor=True)  # type: ignore[call-arg]
         torch.save(state_dict, os.path.join(args.output_dir, "pytorch_model.bin"))
         tokenizer.save_pretrained(args.output_dir)
+
+    torch.distributed.destroy_process_group()
 
 
 if __name__ == "__main__":

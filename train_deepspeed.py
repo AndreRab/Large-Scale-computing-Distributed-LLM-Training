@@ -1,4 +1,4 @@
-"""
+r"""
 Fine‑tuning script that leverages the Hugging Face ``Trainer`` API in
 combination with DeepSpeed ZeRO‑3 for memory‑efficient distributed
 training.  DeepSpeed's ZeRO‑3 stage partitions model parameters,
@@ -28,6 +28,7 @@ communications across the cluster.【796659090806970†L108-L116】
 """
 
 import argparse
+import inspect
 import os
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
@@ -70,6 +71,7 @@ def main() -> None:
     parser.add_argument("--deepspeed_config", type=str, required=True, help="Path to the DeepSpeed JSON config file")
     parser.add_argument("--output_dir", type=str, default="./ds_output", help="Where to save the fine‑tuned model")
     parser.add_argument("--fp16", action="store_true", help="Enable FP16 mixed precision")
+    parser.add_argument("--max_steps", type=int, default=-1, help="Stop after this many optimizer steps; useful for cluster smoke tests")
     args = parser.parse_args()
 
     # TrainingArguments MUSZĄ być zadeklarowane przed modelem!
@@ -79,16 +81,26 @@ def main() -> None:
     # disable reporting to external trackers like WandB by passing an
     # empty list to ``report_to``.  Mixed precision can be enabled
     # globally via the ``fp16`` flag.
+    training_arg_values = {
+        "output_dir": args.output_dir,
+        "overwrite_output_dir": True,
+        "per_device_train_batch_size": args.batch_size,
+        "num_train_epochs": args.epochs,
+        "gradient_accumulation_steps": 1,
+        "logging_steps": 10,
+        "fp16": args.fp16,
+        "deepspeed": args.deepspeed_config,
+        "report_to": [],
+    }
+    if args.max_steps > 0:
+        training_arg_values["max_steps"] = args.max_steps
+
+    supported_args = set(inspect.signature(TrainingArguments.__init__).parameters)
+    unsupported_args = sorted(set(training_arg_values) - supported_args)
+    if unsupported_args:
+        print(f"Skipping unsupported TrainingArguments: {unsupported_args}")
     training_args = TrainingArguments(
-        output_dir=args.output_dir,
-        overwrite_output_dir=True,
-        per_device_train_batch_size=args.batch_size,
-        num_train_epochs=args.epochs,
-        gradient_accumulation_steps=1,
-        logging_steps=10,
-        fp16=args.fp16,
-        deepspeed=args.deepspeed_config,
-        report_to=[],
+        **{key: value for key, value in training_arg_values.items() if key in supported_args}
     )
 
     # Load tokenizer and model.  We intentionally avoid automatic
