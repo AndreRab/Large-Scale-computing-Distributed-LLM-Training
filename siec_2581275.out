@@ -1,0 +1,188 @@
+Start testu sieci na węzłach: t[0002,0014]
+Adres głównego węzła: 172.23.16.2:29505
+t0002:448203:448203 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0002:448203:448203 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.2<0>
+t0002:448203:448203 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0002:448203:448203 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0002:448203:448203 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0002:448203:448203 [0] NCCL INFO cudaDriverVersion 12080
+NCCL version 2.21.5+cuda12.4
+t0014:3851965:3851965 [0] NCCL INFO cudaDriverVersion 12080
+t0014:3851965:3851965 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0014:3851965:3851965 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.14<0>
+t0014:3851965:3851965 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0014:3851965:3851965 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0014:3851965:3851965 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0014:3851965:3852054 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0014:3851965:3852054 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0002:448203:448302 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0002:448203:448302 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0014:3851965:3852054 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.14<0>
+t0014:3851965:3852054 [0] NCCL INFO Using non-device net plugin version 0
+t0014:3851965:3852054 [0] NCCL INFO Using network IB
+t0002:448203:448302 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.2<0>
+t0002:448203:448302 [0] NCCL INFO Using non-device net plugin version 0
+t0002:448203:448302 [0] NCCL INFO Using network IB
+t0002:448203:448302 [0] NCCL INFO ncclCommInitRank comm 0x56194c2a16b0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId c7000 commId 0xbaf96a59fc066d07 - Init START
+t0014:3851965:3852054 [0] NCCL INFO ncclCommInitRank comm 0x555f3a57e970 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId c7000 commId 0xbaf96a59fc066d07 - Init START
+t0002:448203:448302 [0] NCCL INFO Setting affinity for GPU 0 to 0f,00000000,00000000
+t0014:3851965:3852054 [0] NCCL INFO Setting affinity for GPU 0 to 4000,00000000,00000000
+t0002:448203:448302 [0] NCCL INFO comm 0x56194c2a16b0 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+t0002:448203:448302 [0] NCCL INFO Channel 00/04 :    0   1
+t0002:448203:448302 [0] NCCL INFO Channel 01/04 :    0   1
+t0002:448203:448302 [0] NCCL INFO Channel 02/04 :    0   1
+t0002:448203:448302 [0] NCCL INFO Channel 03/04 :    0   1
+t0002:448203:448302 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] 1/-1/-1->0->-1 [2] -1/-1/-1->0->1 [3] -1/-1/-1->0->1
+t0002:448203:448302 [0] NCCL INFO P2P Chunksize set to 131072
+t0014:3851965:3852054 [0] NCCL INFO comm 0x555f3a57e970 rank 1 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+t0014:3851965:3852054 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] 0/-1/-1->1->-1 [3] 0/-1/-1->1->-1
+t0014:3851965:3852054 [0] NCCL INFO P2P Chunksize set to 131072
+t0002:448203:448302 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+t0002:448203:448302 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/IB/1
+t0002:448203:448302 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [receive] via NET/IB/0
+t0002:448203:448302 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [receive] via NET/IB/1
+t0002:448203:448302 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/IB/0
+t0002:448203:448302 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/IB/1
+t0002:448203:448302 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [send] via NET/IB/0
+t0002:448203:448302 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [send] via NET/IB/1
+t0014:3851965:3852054 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+t0014:3851965:3852054 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/IB/1
+t0014:3851965:3852054 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+t0014:3851965:3852054 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[0] [receive] via NET/IB/1
+t0014:3851965:3852054 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/IB/0
+t0014:3851965:3852054 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/IB/1
+t0014:3851965:3852054 [0] NCCL INFO Channel 02/0 : 1[0] -> 0[0] [send] via NET/IB/0
+t0014:3851965:3852054 [0] NCCL INFO Channel 03/0 : 1[0] -> 0[0] [send] via NET/IB/1
+t0014:3851965:3852054 [0] NCCL INFO Connected all rings
+t0002:448203:448302 [0] NCCL INFO Connected all rings
+t0014:3851965:3852054 [0] NCCL INFO Connected all trees
+t0002:448203:448302 [0] NCCL INFO Connected all trees
+t0014:3851965:3852054 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+t0014:3851965:3852054 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+t0002:448203:448302 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+t0002:448203:448302 [0] NCCL INFO 4 coll channels, 4 collnet channels, 0 nvls channels, 4 p2p channels, 2 p2p channels per peer
+t0002:448203:448302 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0002:448203:448302 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0002:448203:448302 [0] NCCL INFO ncclCommInitRank comm 0x56194c2a16b0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId c7000 commId 0xbaf96a59fc066d07 - Init COMPLETE
+t0014:3851965:3852054 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0014:3851965:3852054 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0014:3851965:3852054 [0] NCCL INFO ncclCommInitRank comm 0x555f3a57e970 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId c7000 commId 0xbaf96a59fc066d07 - Init COMPLETE
+Epoch 1, step 0, loss=9.3875
+Epoch 1, step 10, loss=6.8754
+Epoch 1, step 20, loss=5.7607
+Epoch 1, step 30, loss=5.6204
+Epoch 1, step 40, loss=6.6077
+Epoch 1, step 50, loss=6.0111
+Epoch 1, step 60, loss=5.8575
+Epoch 1, step 70, loss=5.3536
+Epoch 1, step 80, loss=5.3370
+Epoch 1, step 90, loss=6.2199
+Epoch 1, step 100, loss=5.4030
+Epoch 1, step 110, loss=5.1292
+Epoch 1, step 120, loss=5.6755
+Epoch 1, step 130, loss=5.5923
+Epoch 1, step 140, loss=5.0883
+Epoch 1, step 150, loss=5.5171
+Epoch 1, step 160, loss=5.6630
+Epoch 1, step 170, loss=5.5722
+Epoch 1, step 180, loss=5.5624
+Epoch 1, step 190, loss=5.1250
+Epoch 1, step 200, loss=4.8082
+Epoch 1, step 210, loss=4.9893
+Epoch 1, step 220, loss=5.5202
+Epoch 1, step 230, loss=5.1039
+Epoch 1, step 240, loss=5.5609
+Epoch 1, step 250, loss=5.7321
+Epoch 1, step 260, loss=5.1055
+Epoch 1, step 270, loss=5.7350
+Epoch 1, step 280, loss=5.7277
+Epoch 1, step 290, loss=5.2749
+Epoch 1, step 300, loss=5.0778
+Epoch 1, step 310, loss=5.2407
+Epoch 1, step 320, loss=5.0953
+Epoch 1, step 330, loss=4.9266
+Epoch 1, step 340, loss=5.3598
+Epoch 1, step 350, loss=5.2902
+Epoch 1, step 360, loss=5.6514
+Epoch 1, step 370, loss=5.4854
+Epoch 1, step 380, loss=5.0800
+Epoch 1, step 390, loss=4.9608
+Epoch 1, step 400, loss=4.9823
+Epoch 1, step 410, loss=5.3983
+Epoch 1, step 420, loss=5.2785
+Epoch 1, step 430, loss=4.7089
+Epoch 1, step 440, loss=5.3799
+Epoch 1, step 450, loss=5.1015
+Epoch 1, step 460, loss=4.9859
+Epoch 1, step 470, loss=5.3904
+Epoch 1, step 480, loss=5.2894
+Epoch 1, step 490, loss=4.4971
+Epoch 1, step 500, loss=5.0967
+Epoch 1, step 510, loss=5.5115
+Epoch 1, step 520, loss=5.2360
+Epoch 1, step 530, loss=5.4408
+Epoch 1, step 540, loss=5.1078
+Epoch 1, step 550, loss=5.6283
+Epoch 1, step 560, loss=5.2016
+Epoch 1, step 570, loss=4.5761
+Epoch 1, step 580, loss=4.7755
+Epoch 1, step 590, loss=4.9753
+Epoch 1, step 600, loss=5.2879
+Epoch 1, step 610, loss=4.9962
+Epoch 1, step 620, loss=4.4250
+Epoch 1, step 630, loss=4.7098
+Epoch 1, step 640, loss=4.7470
+Epoch 1, step 650, loss=5.1740
+Epoch 1, step 660, loss=5.2257
+Epoch 1, step 670, loss=5.4615
+Epoch 1, step 680, loss=4.6930
+Epoch 1, step 690, loss=4.2591
+Epoch 1, step 700, loss=4.9630
+Epoch 1, step 710, loss=5.1787
+Epoch 1, step 720, loss=5.5979
+Epoch 1, step 730, loss=5.3504
+Epoch 1, step 740, loss=5.1195
+Epoch 1, step 750, loss=4.6855
+Epoch 1, step 760, loss=4.8586
+Epoch 1, step 770, loss=5.3378
+Epoch 1, step 780, loss=4.9191
+Epoch 1, step 790, loss=4.7809
+Epoch 1, step 800, loss=5.4198
+Epoch 1, step 810, loss=4.2461
+Epoch 1, step 820, loss=4.9168
+Epoch 1, step 830, loss=5.0254
+Epoch 1, step 840, loss=5.1818
+Epoch 1, step 850, loss=5.0933
+Epoch 1, step 860, loss=5.0425
+Epoch 1, step 870, loss=5.0716
+Epoch 1, step 880, loss=5.1186
+Epoch 1, step 890, loss=5.0356
+Epoch 1, step 900, loss=5.3670
+Epoch 1, step 910, loss=4.7538
+Epoch 1, step 920, loss=4.9298
+Epoch 1, step 930, loss=4.8407
+Epoch 1, step 940, loss=4.8608
+Epoch 1, step 950, loss=5.2674
+Epoch 1, step 960, loss=4.8155
+Epoch 1, step 970, loss=4.9401
+Epoch 1, step 980, loss=5.2299
+Epoch 1, step 990, loss=4.6157
+Epoch 1, step 1000, loss=5.0576
+Epoch 1, step 1010, loss=5.2772
+Epoch 1, step 1020, loss=4.4184
+Epoch 1, step 1030, loss=5.0085
+Epoch 1, step 1040, loss=4.9099
+Epoch 1, step 1050, loss=4.5101
+Epoch 1, step 1060, loss=5.0930
+Epoch 1, step 1070, loss=4.2802
+Epoch 1, step 1080, loss=4.3067
+Epoch 1, step 1090, loss=4.9180
+Epoch 1, step 1100, loss=3.9718
+Epoch 1, step 1110, loss=4.9908
+Epoch 1, step 1120, loss=4.4387
+Epoch 1, step 1130, loss=4.4698
+Epoch 1, step 1140, loss=5.1396
+Epoch 1, step 1150, loss=4.9363
+Epoch 1, step 1160, loss=5.2653
+t0014:3851965:3852059 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+t0014:3851965:3855088 [0] NCCL INFO comm 0x555f3a57e970 rank 1 nranks 2 cudaDev 0 busId c7000 - Abort COMPLETE

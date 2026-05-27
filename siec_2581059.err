@@ -1,0 +1,79 @@
+ CUDA/12.1.1 loaded.
+------------INFO------------
+Now please run command: 
+eval "$(conda shell.bash hook)"
+to set conda env
+----------------------------
+ Miniconda3/25.7.0-2 loaded.
+[W511 16:03:59.758129170 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0006]:29505 (errno: 97 - Address family not supported by protocol).
+[W511 16:04:00.154080099 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0006]:29505 (errno: 97 - Address family not supported by protocol).
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+E0511 16:04:04.981000 1678222 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 1678241) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_fsdp.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-11_16:04:04
+  host      : t0006
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1678241)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E0511 16:04:05.387000 1457685 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 1457702) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_fsdp.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-11_16:04:05
+  host      : t0016
+  rank      : 1 (local_rank: 0)
+  exitcode  : 1 (pid: 1457702)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: t0006: task 0: Exited with exit code 1
+srun: error: t0016: task 1: Exited with exit code 1

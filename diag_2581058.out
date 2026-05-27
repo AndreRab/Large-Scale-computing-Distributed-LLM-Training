@@ -1,0 +1,11 @@
+=== DIAGNOSTYKA START: Mon May 11 16:02:23 CEST 2026 ===
+--- Ładowanie modułów i środowiska ---
+Python: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python
+--- Test PyTorch i CUDA ---
+PyTorch version: 2.5.1+cu121
+CUDA available: True
+GPU Device: NVIDIA A100-SXM4-40GB
+GPU Count: 1
+Transformers OK
+--- Próba uruchomienia torchrun (mini model) ---
+=== DIAGNOSTYKA KONIEC: Mon May 11 16:02:39 CEST 2026 ===

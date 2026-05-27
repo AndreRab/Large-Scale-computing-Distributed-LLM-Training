@@ -1,0 +1,21 @@
+ CUDA/12.1.1 loaded.
+------------INFO------------
+Now please run command: 
+eval "$(conda shell.bash hook)"
+to set conda env
+----------------------------
+ Miniconda3/25.7.0-2 loaded.
+[W511 16:36:36.174145002 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [localhost]:29509 (errno: 97 - Address family not supported by protocol).
+[W511 16:36:43.385845883 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [localhost]:29509 (errno: 97 - Address family not supported by protocol).
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/293 [00:00<?, ?it/s]Loading weights:  51%|█████     | 148/293 [00:00<00:00, 1382.02it/s]Loading weights:  98%|█████████▊| 287/293 [00:00<00:00, 1382.83it/s]Loading weights: 100%|██████████| 293/293 [00:00<00:00, 862.75it/s] 
+Generating test split:   0%|          | 0/4358 [00:00<?, ? examples/s]Generating test split: 100%|██████████| 4358/4358 [00:00<00:00, 78359.22 examples/s]
+Generating train split:   0%|          | 0/36718 [00:00<?, ? examples/s]Generating train split: 100%|██████████| 36718/36718 [00:00<00:00, 889948.36 examples/s]
+Generating validation split:   0%|          | 0/3760 [00:00<?, ? examples/s]Generating validation split: 100%|██████████| 3760/3760 [00:00<00:00, 521738.28 examples/s]
+Map:   0%|          | 0/36718 [00:00<?, ? examples/s]Map:   5%|▌         | 2000/36718 [00:00<00:04, 7707.79 examples/s]Map:  16%|█▋        | 6000/36718 [00:00<00:01, 15463.79 examples/s]Map:  25%|██▍       | 9000/36718 [00:00<00:01, 17376.22 examples/s]Map:  35%|███▌      | 13000/36718 [00:00<00:01, 19124.67 examples/s]Map:  46%|████▋     | 17000/36718 [00:00<00:00, 21427.52 examples/s]Map:  57%|█████▋    | 21000/36718 [00:01<00:00, 23448.31 examples/s]Map:  68%|██████▊   | 25000/36718 [00:01<00:00, 25109.17 examples/s]Map:  79%|███████▉  | 29000/36718 [00:01<00:00, 25623.21 examples/s]Map:  90%|████████▉ | 33000/36718 [00:01<00:00, 25599.51 examples/s]Map: 100%|██████████| 36718/36718 [00:01<00:00, 25909.03 examples/s]Map: 100%|██████████| 36718/36718 [00:01<00:00, 22404.89 examples/s]
+slurmstepd: error: *** STEP 2581126.0 ON t0006 CANCELLED AT 2026-05-11T16:51:42 DUE TO TIME LIMIT ***
+slurmstepd: error: *** JOB 2581126 ON t0006 CANCELLED AT 2026-05-11T16:51:42 DUE TO TIME LIMIT ***
+srun: Job step aborted: Waiting up to 182 seconds for job step to finish.
+W0511 16:51:42.010000 1680657 site-packages/torch/distributed/elastic/agent/server/api.py:704] Received Signals.SIGTERM death signal, shutting down workers
+W0511 16:51:42.014000 1680657 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1680677 closing signal SIGTERM

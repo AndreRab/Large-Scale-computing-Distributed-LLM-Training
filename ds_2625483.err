@@ -1,0 +1,222 @@
+ CUDA/12.1.1 loaded.
+------------INFO------------
+Now please run command: 
+eval "$(conda shell.bash hook)"
+to set conda env
+----------------------------
+ Miniconda3/25.7.0-2 loaded.
+[W526 07:04:43.083391109 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0016]:29501 (errno: 97 - Address family not supported by protocol).
+[W526 07:04:43.041911111 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0016]:29501 (errno: 97 - Address family not supported by protocol).
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 125, in <module>
+    main()
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_deepspeed.py", line 82, in main
+    training_args = TrainingArguments(
+TypeError: TrainingArguments.__init__() got an unexpected keyword argument 'overwrite_output_dir'
+W0526 07:04:57.599000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102852 closing signal SIGTERM
+W0526 07:04:57.599000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102854 closing signal SIGTERM
+W0526 07:04:57.600000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102855 closing signal SIGTERM
+W0526 07:04:57.600000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102856 closing signal SIGTERM
+W0526 07:04:57.600000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102857 closing signal SIGTERM
+W0526 07:04:57.600000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102858 closing signal SIGTERM
+W0526 07:04:57.601000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2102859 closing signal SIGTERM
+E0526 07:04:57.665000 2102836 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 1 (pid: 2102853) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_deepspeed.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-26_07:04:57
+  host      : t0016
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 2102853)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+E0526 07:04:57.703000 640567 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 640581) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_deepspeed.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 9 (local_rank: 1)
+  exitcode  : 1 (pid: 640582)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 10 (local_rank: 2)
+  exitcode  : 1 (pid: 640583)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 11 (local_rank: 3)
+  exitcode  : 1 (pid: 640584)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 12 (local_rank: 4)
+  exitcode  : 1 (pid: 640585)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 13 (local_rank: 5)
+  exitcode  : 1 (pid: 640586)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 14 (local_rank: 6)
+  exitcode  : 1 (pid: 640587)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 15 (local_rank: 7)
+  exitcode  : 1 (pid: 640588)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-26_07:04:57
+  host      : t0028
+  rank      : 8 (local_rank: 0)
+  exitcode  : 1 (pid: 640581)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: t0016: task 0: Exited with exit code 1
+srun: error: t0028: task 1: Exited with exit code 1

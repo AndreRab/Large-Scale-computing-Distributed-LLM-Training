@@ -1,0 +1,267 @@
+ CUDA/12.1.1 loaded.
+ Miniconda3/25.7.0-2 unloaded.
+------------INFO------------
+Now please run command: 
+eval "$(conda shell.bash hook)"
+to set conda env
+----------------------------
+ Miniconda3/25.7.0-2 loaded.
+[2026-05-11 11:37:06,439] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[2026-05-11 11:37:06,439] torch.distributed.run: [WARNING] master_addr is only used for static rdzv_backend and when rdzv_endpoint is not specified.
+[W socket.cpp:436] [c10d] The server socket cannot be initialized on [::]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:663] [c10d] The client socket cannot be initialized to connect to [t0016]:29500 (errno: 97 - Address family not supported by protocol).
+[W socket.cpp:663] [c10d] The client socket cannot be initialized to connect to [t0016]:29500 (errno: 97 - Address family not supported by protocol).
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] Disabling PyTorch because PyTorch >= 2.4 is required but found 2.1.2+cu121
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+Traceback (most recent call last):
+  File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 40, in <module>
+    from torch.distributed.fsdp import fully_shard, FSDPModule
+ImportError: cannot import name 'fully_shard' from 'torch.distributed.fsdp' (/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/fsdp/__init__.py)
+[2026-05-11 11:37:17,522] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 1437152) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+[2026-05-11 11:37:17,522] torch.distributed.elastic.multiprocessing.api: [ERROR] failed (exitcode: 1) local_rank: 0 (pid: 3522672) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 346, in wrapper
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 806, in main
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 797, in run
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_fsdp.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 1437153)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 1437154)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 3 (local_rank: 3)
+  exitcode  : 1 (pid: 1437155)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 4 (local_rank: 4)
+  exitcode  : 1 (pid: 1437156)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 5 (local_rank: 5)
+  exitcode  : 1 (pid: 1437157)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 6 (local_rank: 6)
+  exitcode  : 1 (pid: 1437158)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 7 (local_rank: 7)
+  exitcode  : 1 (pid: 1437159)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-11_11:37:17
+  host      : t0016
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1437152)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 134, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_fsdp.py FAILED
+------------------------------------------------------------
+Failures:
+[1]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 9 (local_rank: 1)
+  exitcode  : 1 (pid: 3522673)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[2]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 10 (local_rank: 2)
+  exitcode  : 1 (pid: 3522674)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[3]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 11 (local_rank: 3)
+  exitcode  : 1 (pid: 3522675)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[4]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 12 (local_rank: 4)
+  exitcode  : 1 (pid: 3522676)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[5]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 13 (local_rank: 5)
+  exitcode  : 1 (pid: 3522677)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[6]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 14 (local_rank: 6)
+  exitcode  : 1 (pid: 3522678)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+[7]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 15 (local_rank: 7)
+  exitcode  : 1 (pid: 3522679)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-11_11:37:17
+  host      : t0019
+  rank      : 8 (local_rank: 0)
+  exitcode  : 1 (pid: 3522672)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+srun: error: t0016: task 0: Exited with exit code 1
+srun: error: t0019: task 1: Exited with exit code 1

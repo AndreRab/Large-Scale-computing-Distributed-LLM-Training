@@ -1,0 +1,299 @@
+ CUDA/12.1.1 loaded.
+------------INFO------------
+Now please run command: 
+eval "$(conda shell.bash hook)"
+to set conda env
+----------------------------
+ Miniconda3/25.7.0-2 loaded.
+[W526 03:14:23.250463610 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:23.160054378 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.835869350 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.835894670 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.836030830 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939117461 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939144701 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.836085010 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939285301 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939411641 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939442741 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.836451931 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.836448471 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.836521272 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.836556761 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939815560 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.939900490 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+[W526 03:14:35.940067669 socket.cpp:752] [c10d] The client socket cannot be initialized to connect to [t0012]:29500 (errno: 97 - Address family not supported by protocol).
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:  72%|███████▏  | 262/365 [00:00<00:00, 2619.62it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 3506.85it/s]
+Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 8901.89it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 8587.12it/s]
+Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 8052.39it/s]
+Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 6575.10it/s]
+Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 7327.86it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 8270.24it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 7715.36it/s]
+Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights:   0%|          | 0/365 [00:00<?, ?it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 4591.22it/s]Loading weights: 100%|██████████| 365/365 [00:00<00:00, 4735.75it/s]
+
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 4493.02it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 5077.01it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 4728.17it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 4497.14it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 4599.92it/s]
+Loading weights: 100%|██████████| 365/365 [00:00<00:00, 8590.69it/s]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 172, in <module>
+[rank0]:     main()
+[rank0]:   File "/net/people/plgrid/plgmwojnar99/Large-Scale-computing-Distributed-LLM-Training/train_fsdp.py", line 145, in main
+[rank0]:     outputs = model(input_ids=input_ids, labels=labels)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1844, in _call_impl
+[rank0]:     return inner()
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1769, in inner
+[rank0]:     args_kwargs_result = hook(self, args, kwargs)  # type: ignore[misc]
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_state.py", line 66, in fsdp_hook_wrapper
+[rank0]:     return torch._dynamo.disable(func, recursive=True)(*args, **kwargs)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/_dynamo/eval_frame.py", line 632, in _fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_state.py", line 232, in _pre_forward
+[rank0]:     args, kwargs = self._fsdp_param_group.pre_forward(module, args, kwargs)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_param_group.py", line 300, in pre_forward
+[rank0]:     self.unshard()
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_param_group.py", line 233, in unshard
+[rank0]:     self._all_gather_result = foreach_all_gather(
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/_composable/fsdp/_fsdp_collectives.py", line 163, in foreach_all_gather
+[rank0]:     all_gather_work = dist.all_gather_into_tensor(
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/c10d_logger.py", line 83, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/distributed_c10d.py", line 3435, in all_gather_into_tensor
+[rank0]:     work = group._allgather_base(output_tensor, input_tensor, opts)
+[rank0]: torch.distributed.DistBackendError: NCCL error in: ../torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:2251, internal error - please report this issue to the NCCL developers, NCCL version 2.21.5
+[rank0]: ncclInternalError: Internal check failed.
+[rank0]: Last error:
+[rank0]: Bootstrap : no socket interface found
+[rank0]:[W526 03:15:33.002238527 ProcessGroupNCCL.cpp:1250] Warning: WARNING: process group has NOT been destroyed before we destruct ProcessGroupNCCL. On normal program exit, the application should call destroy_process_group to ensure that any pending NCCL operations have finished in this process. In rare cases this process can exit before this point and block the progress of another member of the process group. This constraint has always been present,  but this warning has only been added since PyTorch 2.4 (function operator())
+W0526 03:15:33.911000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679600 closing signal SIGTERM
+W0526 03:15:33.912000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679601 closing signal SIGTERM
+W0526 03:15:33.913000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679602 closing signal SIGTERM
+W0526 03:15:33.913000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679603 closing signal SIGTERM
+W0526 03:15:33.914000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679604 closing signal SIGTERM
+W0526 03:15:33.915000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679605 closing signal SIGTERM
+W0526 03:15:33.915000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1679606 closing signal SIGTERM
+E0526 03:15:34.694000 1679584 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: 1) local_rank: 0 (pid: 1679599) of binary: /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+train_fsdp.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-05-26_03:15:33
+  host      : t0012
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1679599)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+W0526 03:15:34.929000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478741 closing signal SIGTERM
+W0526 03:15:34.929000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478742 closing signal SIGTERM
+W0526 03:15:34.930000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478743 closing signal SIGTERM
+W0526 03:15:34.931000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478744 closing signal SIGTERM
+W0526 03:15:34.931000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478745 closing signal SIGTERM
+W0526 03:15:34.932000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478746 closing signal SIGTERM
+W0526 03:15:34.932000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478747 closing signal SIGTERM
+W0526 03:15:34.932000 1478726 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 1478748 closing signal SIGTERM
+srun: error: t0012: task 0: Exited with exit code 1
+[W526 03:15:35.687453368 TCPStore.cpp:122] [c10d] sendBytes failed on SocketImpl(fd=4, addr=t0013:53940, remote=t0012:29500): Broken pipe
+Exception raised from sendBytes at ../torch/csrc/distributed/c10d/Utils.hpp:645 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x14c6cebee446 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5fecb29 (0x14c70a2bfb29 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x27e (0x14c70a2bd56e in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2a (0x14c70a2bd9ca in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x7a (0x14c70a2be83a in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: <unknown function> + 0xd71cbc (0x14c719ca9cbc in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #6: <unknown function> + 0x4cb474 (0x14c719403474 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x13b9a6 (0x5599ee2469a6 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #8: _PyObject_MakeTpCall + 0x273 (0x5599ee23fa63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #9: <unknown function> + 0x148fd0 (0x5599ee253fd0 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #10: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #11: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #12: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #13: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #14: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #15: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #16: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #17: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #18: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #19: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #20: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #21: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #22: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #23: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #24: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #25: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #26: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #27: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #28: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #29: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #30: _PyEval_EvalFrameDefault + 0x313 (0x5599ee236c63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #31: _PyObject_FastCallDictTstate + 0xce (0x5599ee23ee6e in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #32: _PyObject_Call_Prepend + 0xe7 (0x5599ee252257 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #33: <unknown function> + 0x20de37 (0x5599ee318e37 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #34: PyObject_Call + 0x20f (0x5599ee25466f in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #35: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #36: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #37: _PyEval_EvalFrameDefault + 0x313 (0x5599ee236c63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #38: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #39: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #40: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #41: _PyEval_EvalFrameDefault + 0x313 (0x5599ee236c63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #42: <unknown function> + 0x1d268c (0x5599ee2dd68c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #43: PyEval_EvalCode + 0x85 (0x5599ee2dd5d5 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #44: <unknown function> + 0x2042aa (0x5599ee30f2aa in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #45: <unknown function> + 0x1febf3 (0x5599ee309bf3 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #46: <unknown function> + 0x97160 (0x5599ee1a2160 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #47: _PyRun_SimpleFileObject + 0x1bb (0x5599ee30449b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #48: _PyRun_AnyFileObject + 0x44 (0x5599ee3041f4 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #49: Py_RunMain + 0x371 (0x5599ee3011e1 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #50: Py_BytesMain + 0x37 (0x5599ee2cfec7 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #51: <unknown function> + 0x2a610 (0x14c71b04d610 in /lib64/libc.so.6)
+frame #52: __libc_start_main + 0x80 (0x14c71b04d6c0 in /lib64/libc.so.6)
+frame #53: _start + 0x2e (0x5599ee2cfdde in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+
+W0526 03:15:35.844000 1478726 site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1282] The node 't0013_1478726_0' has failed to shutdown the rendezvous '2621670' due to an error of type RendezvousConnectionError.
+[W526 03:15:35.695899397 TCPStore.cpp:122] [c10d] sendBytes failed on SocketImpl(fd=4, addr=t0013:53940, remote=t0012:29500): Broken pipe
+Exception raised from sendBytes at ../torch/csrc/distributed/c10d/Utils.hpp:645 (most recent call first):
+frame #0: c10::Error::Error(c10::SourceLocation, std::string) + 0x96 (0x14c6cebee446 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libc10.so)
+frame #1: <unknown function> + 0x5fecb29 (0x14c70a2bfb29 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #2: c10d::TCPStore::doWait(c10::ArrayRef<std::string>, std::chrono::duration<long, std::ratio<1l, 1000l> >) + 0x27e (0x14c70a2bd56e in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #3: c10d::TCPStore::doGet(std::string const&) + 0x2a (0x14c70a2bd9ca in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #4: c10d::TCPStore::get(std::string const&) + 0x7a (0x14c70a2be83a in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_cpu.so)
+frame #5: <unknown function> + 0xd71cbc (0x14c719ca9cbc in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #6: <unknown function> + 0x4cb474 (0x14c719403474 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/lib/libtorch_python.so)
+frame #7: <unknown function> + 0x13b9a6 (0x5599ee2469a6 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #8: _PyObject_MakeTpCall + 0x273 (0x5599ee23fa63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #9: <unknown function> + 0x148fd0 (0x5599ee253fd0 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #10: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #11: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #12: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #13: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #14: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #15: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #16: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #17: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #18: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #19: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #20: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #21: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #22: _PyEval_EvalFrameDefault + 0x6fb (0x5599ee23704b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #23: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #24: _PyEval_EvalFrameDefault + 0x313 (0x5599ee236c63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #25: _PyObject_FastCallDictTstate + 0xce (0x5599ee23ee6e in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #26: _PyObject_Call_Prepend + 0xe7 (0x5599ee252257 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #27: <unknown function> + 0x20de37 (0x5599ee318e37 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #28: PyObject_Call + 0x20f (0x5599ee25466f in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #29: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #30: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #31: _PyEval_EvalFrameDefault + 0x313 (0x5599ee236c63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #32: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #33: _PyEval_EvalFrameDefault + 0x2d09 (0x5599ee239659 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #34: _PyFunction_Vectorcall + 0x6c (0x5599ee246e7c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #35: _PyEval_EvalFrameDefault + 0x313 (0x5599ee236c63 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #36: <unknown function> + 0x1d268c (0x5599ee2dd68c in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #37: PyEval_EvalCode + 0x85 (0x5599ee2dd5d5 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #38: <unknown function> + 0x2042aa (0x5599ee30f2aa in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #39: <unknown function> + 0x1febf3 (0x5599ee309bf3 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #40: <unknown function> + 0x97160 (0x5599ee1a2160 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #41: _PyRun_SimpleFileObject + 0x1bb (0x5599ee30449b in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #42: _PyRun_AnyFileObject + 0x44 (0x5599ee3041f4 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #43: Py_RunMain + 0x371 (0x5599ee3011e1 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #44: Py_BytesMain + 0x37 (0x5599ee2cfec7 in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+frame #45: <unknown function> + 0x2a610 (0x14c71b04d610 in /lib64/libc.so.6)
+frame #46: __libc_start_main + 0x80 (0x14c71b04d6c0 in /lib64/libc.so.6)
+frame #47: _start + 0x2e (0x5599ee2cfdde in /net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/python3.10)
+
+W0526 03:15:35.851000 1478726 site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1282] The node 't0013_1478726_0' has failed to shutdown the rendezvous '2621670' due to an error of type RendezvousConnectionError.
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 117, in _call_store
+    return getattr(self._store, store_op)(*args, **kwargs)
+torch.distributed.DistNetworkError: failed to recv, got 0 bytes
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 919, in main
+    run(args)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/run.py", line 910, in run
+    elastic_launch(
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 260, in launch_agent
+    result = agent.run()
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/metrics/api.py", line 137, in wrapper
+    result = f(*args, **kwargs)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 696, in run
+    result = self._invoke_run(role)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/agent/server/api.py", line 891, in _invoke_run
+    num_nodes_waiting = rdzv_handler.num_nodes_waiting()
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 1253, in num_nodes_waiting
+    self._state_holder.sync()
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/dynamic_rendezvous.py", line 437, in sync
+    get_response = self._backend.get_state()
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 75, in get_state
+    base64_state: bytes = self._call_store("get", self._key)
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/torch/distributed/elastic/rendezvous/c10d_rendezvous_backend.py", line 119, in _call_store
+    raise RendezvousConnectionError(
+torch.distributed.elastic.rendezvous.api.RendezvousConnectionError: The connection to the C10d store has failed. See inner exception for details.
+srun: error: t0013: task 1: Exited with exit code 1

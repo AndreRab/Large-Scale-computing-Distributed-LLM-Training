@@ -37,9 +37,14 @@ import os
 import torch
 from torch.utils.data import DataLoader
 from torch.utils.data.distributed import DistributedSampler
-from torch.distributed.fsdp import fully_shard, FSDPModule
+from torch.distributed._composable.fsdp import fully_shard, FSDPModule
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from datasets import load_dataset
+
+# Dodane importy do prawidłowego zapisu wag w FSDP
+from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
+from torch.distributed.fsdp import FullStateDictConfig, StateDictType
+
 
 
 def tokenize_function(examples, tokenizer, block_size: int):
@@ -147,9 +152,18 @@ def main() -> None:
 
     # Save only on rank 0 to avoid race conditions.  FSDP returns
     # sharded state dicts by default; gather them to CPU before saving.
+
+
+    # Używamy context managera, który musi być wykonany przez WSZYSTKIE procesy.
+    save_policy = FullStateDictConfig(offload_to_cpu=True, rank0_only=True)
+    
+    with FSDP.state_dict_type(model, StateDictType.FULL_STATE_DICT, save_policy):
+        # Ta linia wymaga komunikacji między węzłami, więc wywołujemy ją przed if'em
+        state_dict = model.state_dict()
+
     if torch.distributed.get_rank() == 0:
         os.makedirs(args.output_dir, exist_ok=True)
-        state_dict = model.state_dict(gather_dtensor=True)  # type: ignore[call-arg]
+        #state_dict = model.state_dict(gather_dtensor=True)  # type: ignore[call-arg]
         torch.save(state_dict, os.path.join(args.output_dir, "pytorch_model.bin"))
         tokenizer.save_pretrained(args.output_dir)
 

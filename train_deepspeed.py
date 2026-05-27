@@ -72,6 +72,25 @@ def main() -> None:
     parser.add_argument("--fp16", action="store_true", help="Enable FP16 mixed precision")
     args = parser.parse_args()
 
+    # TrainingArguments MUSZĄ być zadeklarowane przed modelem!
+    # Dzięki temu Hugging Face wie, że ma aktywować kontekst ZeRO-3 
+    # i nie załaduje całego modelu do pamięci RAM na raz.
+    # Define training arguments; the deepspeed config enables ZeRO‑3.  We
+    # disable reporting to external trackers like WandB by passing an
+    # empty list to ``report_to``.  Mixed precision can be enabled
+    # globally via the ``fp16`` flag.
+    training_args = TrainingArguments(
+        output_dir=args.output_dir,
+        overwrite_output_dir=True,
+        per_device_train_batch_size=args.batch_size,
+        num_train_epochs=args.epochs,
+        gradient_accumulation_steps=1,
+        logging_steps=10,
+        fp16=args.fp16,
+        deepspeed=args.deepspeed_config,
+        report_to=[],
+    )
+
     # Load tokenizer and model.  We intentionally avoid automatic
     # sharding or wrapping here because DeepSpeed handles parameter
     # partitioning internally via the ZeRO‑3 engine.
@@ -90,22 +109,6 @@ def main() -> None:
     )
     sequences = [torch.tensor(s, dtype=torch.long) for s in tokenised["input_ids"]]
     train_dataset = CausalDataset(sequences)
-
-    # Define training arguments; the deepspeed config enables ZeRO‑3.  We
-    # disable reporting to external trackers like WandB by passing an
-    # empty list to ``report_to``.  Mixed precision can be enabled
-    # globally via the ``fp16`` flag.
-    training_args = TrainingArguments(
-        output_dir=args.output_dir,
-        overwrite_output_dir=True,
-        per_device_train_batch_size=args.batch_size,
-        num_train_epochs=args.epochs,
-        gradient_accumulation_steps=1,
-        logging_steps=10,
-        fp16=args.fp16,
-        deepspeed=args.deepspeed_config,
-        report_to=[],
-    )
 
     trainer = Trainer(
         model=model,

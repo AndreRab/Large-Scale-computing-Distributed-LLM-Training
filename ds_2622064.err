@@ -1,0 +1,21 @@
+ CUDA/12.1.1 loaded.
+------------INFO------------
+Now please run command: 
+eval "$(conda shell.bash hook)"
+to set conda env
+----------------------------
+ Miniconda3/25.7.0-2 loaded.
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/deepspeed", line 6, in <module>
+    main()
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/deepspeed/launcher/runner.py", line 477, in main
+    raise ValueError("Num nodes is >1 but no extra nodes available via hostfile")
+ValueError: Num nodes is >1 but no extra nodes available via hostfile
+Traceback (most recent call last):
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/bin/deepspeed", line 6, in <module>
+    main()
+  File "/net/tscratch/people/plgmwojnar99/.conda/envs/llm_env/lib/python3.10/site-packages/deepspeed/launcher/runner.py", line 477, in main
+    raise ValueError("Num nodes is >1 but no extra nodes available via hostfile")
+ValueError: Num nodes is >1 but no extra nodes available via hostfile
+srun: error: t0012: task 0: Exited with exit code 1
+srun: error: t0013: task 1: Exited with exit code 1

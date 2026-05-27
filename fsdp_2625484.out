@@ -1,0 +1,706 @@
+Job 2625484 starting on nodes: t[0016,0028]
+Master node is t0016 with IP 172.23.16.16
+t0016:2103125:2103125 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103125:2103125 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103125:2103125 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103125:2103125 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103125:2103125 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:2103125:2103125 [0] NCCL INFO cudaDriverVersion 12080
+NCCL version 2.21.5+cuda12.4
+t0016:2103129:2103129 [4] NCCL INFO cudaDriverVersion 12080
+t0016:2103131:2103131 [6] NCCL INFO cudaDriverVersion 12080
+t0016:2103129:2103129 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103131:2103131 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103132:2103132 [7] NCCL INFO cudaDriverVersion 12080
+t0016:2103132:2103132 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103129:2103129 [4] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103131:2103131 [6] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103132:2103132 [7] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103132:2103132 [7] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103129:2103129 [4] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103131:2103131 [6] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103129:2103129 [4] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103132:2103132 [7] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103131:2103131 [6] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103129:2103129 [4] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:2103132:2103132 [7] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:2103131:2103131 [6] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640746:640746 [0] NCCL INFO cudaDriverVersion 12080
+t0028:640746:640746 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640746:640746 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640746:640746 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640746:640746 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640746:640746 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640752:640752 [6] NCCL INFO cudaDriverVersion 12080
+t0028:640752:640752 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640752:640752 [6] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640752:640752 [6] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640752:640752 [6] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640752:640752 [6] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640749:640749 [3] NCCL INFO cudaDriverVersion 12080
+t0028:640749:640749 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640748:640748 [2] NCCL INFO cudaDriverVersion 12080
+t0028:640748:640748 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640750:640750 [4] NCCL INFO cudaDriverVersion 12080
+t0028:640750:640750 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640751:640751 [5] NCCL INFO cudaDriverVersion 12080
+t0028:640751:640751 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640747:640747 [1] NCCL INFO cudaDriverVersion 12080
+t0028:640747:640747 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640749:640749 [3] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640748:640748 [2] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640750:640750 [4] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640747:640747 [1] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640751:640751 [5] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640753:640753 [7] NCCL INFO cudaDriverVersion 12080
+t0028:640748:640748 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640748:640748 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640749:640749 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640748:640748 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640749:640749 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640749:640749 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640753:640753 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640750:640750 [4] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640750:640750 [4] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640750:640750 [4] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640747:640747 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640747:640747 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640747:640747 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640751:640751 [5] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640751:640751 [5] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640751:640751 [5] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640753:640753 [7] NCCL INFO Bootstrap : Using ib0:172.23.16.28<0>
+t0028:640753:640753 [7] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0028:640753:640753 [7] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0028:640753:640753 [7] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:2103129:2103533 [4] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103129:2103533 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103132:2103534 [7] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103132:2103534 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103131:2103532 [6] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103131:2103532 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103125:2103531 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103125:2103531 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103129:2103533 [4] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103129:2103533 [4] NCCL INFO Using non-device net plugin version 0
+t0016:2103129:2103533 [4] NCCL INFO Using network IB
+t0016:2103132:2103534 [7] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103132:2103534 [7] NCCL INFO Using non-device net plugin version 0
+t0016:2103132:2103534 [7] NCCL INFO Using network IB
+t0016:2103131:2103532 [6] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103125:2103531 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103131:2103532 [6] NCCL INFO Using non-device net plugin version 0
+t0016:2103131:2103532 [6] NCCL INFO Using network IB
+t0016:2103125:2103531 [0] NCCL INFO Using non-device net plugin version 0
+t0016:2103125:2103531 [0] NCCL INFO Using network IB
+t0028:640749:641152 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640750:641153 [4] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640751:641156 [5] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640750:641153 [4] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640751:641156 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640749:641152 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640747:641157 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103128:2103128 [3] NCCL INFO cudaDriverVersion 12080
+t0016:2103128:2103128 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103128:2103128 [3] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103128:2103128 [3] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103128:2103128 [3] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103128:2103128 [3] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640747:641157 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640753:641155 [7] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640753:641155 [7] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103126:2103126 [1] NCCL INFO cudaDriverVersion 12080
+t0016:2103126:2103126 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103126:2103126 [1] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103126:2103126 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103126:2103126 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103126:2103126 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640748:641154 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640752:641151 [6] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640748:641154 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640752:641151 [6] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0028:640746:641150 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0028:640746:641150 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103130:2103130 [5] NCCL INFO cudaDriverVersion 12080
+t0016:2103130:2103130 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103130:2103130 [5] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103130:2103130 [5] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103130:2103130 [5] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103130:2103130 [5] NCCL INFO NET/Plugin: Using internal network plugin.
+t0028:640749:641152 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640749:641152 [3] NCCL INFO Using non-device net plugin version 0
+t0028:640749:641152 [3] NCCL INFO Using network IB
+t0028:640750:641153 [4] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640750:641153 [4] NCCL INFO Using non-device net plugin version 0
+t0028:640750:641153 [4] NCCL INFO Using network IB
+t0028:640751:641156 [5] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640751:641156 [5] NCCL INFO Using non-device net plugin version 0
+t0028:640751:641156 [5] NCCL INFO Using network IB
+t0028:640747:641157 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640747:641157 [1] NCCL INFO Using non-device net plugin version 0
+t0028:640747:641157 [1] NCCL INFO Using network IB
+t0028:640753:641155 [7] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640753:641155 [7] NCCL INFO Using non-device net plugin version 0
+t0028:640752:641151 [6] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640753:641155 [7] NCCL INFO Using network IB
+t0028:640752:641151 [6] NCCL INFO Using non-device net plugin version 0
+t0028:640752:641151 [6] NCCL INFO Using network IB
+t0028:640748:641154 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640746:641150 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.28<0>
+t0028:640748:641154 [2] NCCL INFO Using non-device net plugin version 0
+t0028:640748:641154 [2] NCCL INFO Using network IB
+t0028:640746:641150 [0] NCCL INFO Using non-device net plugin version 0
+t0028:640746:641150 [0] NCCL INFO Using network IB
+t0016:2103128:2103551 [3] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103128:2103551 [3] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103126:2103552 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103126:2103552 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103127:2103127 [2] NCCL INFO cudaDriverVersion 12080
+t0016:2103127:2103127 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103127:2103127 [2] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:2103127:2103127 [2] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:2103127:2103127 [2] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:2103127:2103127 [2] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:2103130:2103553 [5] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103130:2103553 [5] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103128:2103551 [3] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103128:2103551 [3] NCCL INFO Using non-device net plugin version 0
+t0016:2103128:2103551 [3] NCCL INFO Using network IB
+t0016:2103126:2103552 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103126:2103552 [1] NCCL INFO Using non-device net plugin version 0
+t0016:2103126:2103552 [1] NCCL INFO Using network IB
+t0016:2103130:2103553 [5] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103130:2103553 [5] NCCL INFO Using non-device net plugin version 0
+t0016:2103130:2103553 [5] NCCL INFO Using network IB
+t0016:2103127:2103558 [2] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:2103127:2103558 [2] NCCL INFO NCCL_SOCKET_IFNAME set by environment to bond,eth,ib,enp
+t0016:2103127:2103558 [2] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:2103127:2103558 [2] NCCL INFO Using non-device net plugin version 0
+t0016:2103127:2103558 [2] NCCL INFO Using network IB
+t0016:2103132:2103534 [7] NCCL INFO ncclCommInitRank comm 0x555c54873550 rank 7 nranks 16 cudaDev 7 nvmlDev 7 busId ca000 commId 0xb80508f238cdc03 - Init START
+t0016:2103130:2103553 [5] NCCL INFO ncclCommInitRank comm 0x555749bcaf40 rank 5 nranks 16 cudaDev 5 nvmlDev 5 busId 8d000 commId 0xb80508f238cdc03 - Init START
+t0016:2103125:2103531 [0] NCCL INFO ncclCommInitRank comm 0x55f73638d650 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb80508f238cdc03 - Init START
+t0016:2103127:2103558 [2] NCCL INFO ncclCommInitRank comm 0x5594031d9ab0 rank 2 nranks 16 cudaDev 2 nvmlDev 2 busId 47000 commId 0xb80508f238cdc03 - Init START
+t0016:2103129:2103533 [4] NCCL INFO ncclCommInitRank comm 0x556413ffd320 rank 4 nranks 16 cudaDev 4 nvmlDev 4 busId 87000 commId 0xb80508f238cdc03 - Init START
+t0016:2103128:2103551 [3] NCCL INFO ncclCommInitRank comm 0x55a13371df20 rank 3 nranks 16 cudaDev 3 nvmlDev 3 busId 4d000 commId 0xb80508f238cdc03 - Init START
+t0016:2103126:2103552 [1] NCCL INFO ncclCommInitRank comm 0x55a20d690f10 rank 1 nranks 16 cudaDev 1 nvmlDev 1 busId a000 commId 0xb80508f238cdc03 - Init START
+t0028:640750:641153 [4] NCCL INFO ncclCommInitRank comm 0x56436cb0e1d0 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId 87000 commId 0xb80508f238cdc03 - Init START
+t0028:640749:641152 [3] NCCL INFO ncclCommInitRank comm 0x55bb6a5294b0 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 4d000 commId 0xb80508f238cdc03 - Init START
+t0016:2103131:2103532 [6] NCCL INFO ncclCommInitRank comm 0x55e3341097f0 rank 6 nranks 16 cudaDev 6 nvmlDev 6 busId c7000 commId 0xb80508f238cdc03 - Init START
+t0028:640751:641156 [5] NCCL INFO ncclCommInitRank comm 0x560f273fe520 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId 8d000 commId 0xb80508f238cdc03 - Init START
+t0028:640753:641155 [7] NCCL INFO ncclCommInitRank comm 0x5628e9e85160 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId ca000 commId 0xb80508f238cdc03 - Init START
+t0028:640748:641154 [2] NCCL INFO ncclCommInitRank comm 0x563854e1f4a0 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 47000 commId 0xb80508f238cdc03 - Init START
+t0028:640746:641150 [0] NCCL INFO ncclCommInitRank comm 0x558874e1a5f0 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb80508f238cdc03 - Init START
+t0028:640752:641151 [6] NCCL INFO ncclCommInitRank comm 0x5595f9d58190 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId c7000 commId 0xb80508f238cdc03 - Init START
+t0028:640747:641157 [1] NCCL INFO ncclCommInitRank comm 0x56155b245870 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId a000 commId 0xb80508f238cdc03 - Init START
+t0016:2103130:2103553 [5] NCCL INFO NVLS multicast support is not available on dev 5
+t0016:2103127:2103558 [2] NCCL INFO Setting affinity for GPU 2 to ffff
+t0016:2103127:2103558 [2] NCCL INFO NVLS multicast support is not available on dev 2
+t0028:640752:641151 [6] NCCL INFO Setting affinity for GPU 6 to ffff,00000000,00000000
+t0028:640752:641151 [6] NCCL INFO NVLS multicast support is not available on dev 6
+t0028:640753:641155 [7] NCCL INFO Setting affinity for GPU 7 to ffff,00000000,00000000
+t0028:640753:641155 [7] NCCL INFO NVLS multicast support is not available on dev 7
+t0016:2103125:2103531 [0] NCCL INFO NVLS multicast support is not available on dev 0
+t0028:640746:641150 [0] NCCL INFO NVLS multicast support is not available on dev 0
+t0028:640750:641153 [4] NCCL INFO NVLS multicast support is not available on dev 4
+t0028:640751:641156 [5] NCCL INFO NVLS multicast support is not available on dev 5
+t0016:2103126:2103552 [1] NCCL INFO NVLS multicast support is not available on dev 1
+t0016:2103129:2103533 [4] NCCL INFO NVLS multicast support is not available on dev 4
+t0028:640747:641157 [1] NCCL INFO NVLS multicast support is not available on dev 1
+t0016:2103131:2103532 [6] NCCL INFO Setting affinity for GPU 6 to ffff,00000000,00000000
+t0016:2103131:2103532 [6] NCCL INFO NVLS multicast support is not available on dev 6
+t0016:2103132:2103534 [7] NCCL INFO Setting affinity for GPU 7 to ffff,00000000,00000000
+t0016:2103128:2103551 [3] NCCL INFO Setting affinity for GPU 3 to ffff
+t0016:2103132:2103534 [7] NCCL INFO NVLS multicast support is not available on dev 7
+t0016:2103128:2103551 [3] NCCL INFO NVLS multicast support is not available on dev 3
+t0028:640749:641152 [3] NCCL INFO Setting affinity for GPU 3 to ffff
+t0028:640749:641152 [3] NCCL INFO NVLS multicast support is not available on dev 3
+t0028:640748:641154 [2] NCCL INFO Setting affinity for GPU 2 to ffff
+t0028:640748:641154 [2] NCCL INFO NVLS multicast support is not available on dev 2
+t0028:640752:641151 [6] NCCL INFO comm 0x5595f9d58190 rank 14 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
+t0028:640751:641156 [5] NCCL INFO comm 0x560f273fe520 rank 13 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
+t0028:640750:641153 [4] NCCL INFO comm 0x56436cb0e1d0 rank 12 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
+t0028:640753:641155 [7] NCCL INFO comm 0x5628e9e85160 rank 15 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
+t0028:640749:641152 [3] NCCL INFO comm 0x55bb6a5294b0 rank 11 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
+t0028:640746:641150 [0] NCCL INFO comm 0x558874e1a5f0 rank 8 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
+t0016:2103125:2103531 [0] NCCL INFO comm 0x55f73638d650 rank 0 nRanks 16 nNodes 2 localRanks 8 localRank 0 MNNVL 0
+t0016:2103126:2103552 [1] NCCL INFO comm 0x55a20d690f10 rank 1 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
+t0016:2103132:2103534 [7] NCCL INFO comm 0x555c54873550 rank 7 nRanks 16 nNodes 2 localRanks 8 localRank 7 MNNVL 0
+t0016:2103127:2103558 [2] NCCL INFO comm 0x5594031d9ab0 rank 2 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
+t0016:2103131:2103532 [6] NCCL INFO comm 0x55e3341097f0 rank 6 nRanks 16 nNodes 2 localRanks 8 localRank 6 MNNVL 0
+t0016:2103130:2103553 [5] NCCL INFO comm 0x555749bcaf40 rank 5 nRanks 16 nNodes 2 localRanks 8 localRank 5 MNNVL 0
+t0028:640748:641154 [2] NCCL INFO comm 0x563854e1f4a0 rank 10 nRanks 16 nNodes 2 localRanks 8 localRank 2 MNNVL 0
+t0028:640747:641157 [1] NCCL INFO comm 0x56155b245870 rank 9 nRanks 16 nNodes 2 localRanks 8 localRank 1 MNNVL 0
+t0016:2103129:2103533 [4] NCCL INFO comm 0x556413ffd320 rank 4 nRanks 16 nNodes 2 localRanks 8 localRank 4 MNNVL 0
+t0016:2103125:2103531 [0] NCCL INFO Channel 00/08 :    0   7   6   5   4   3   2   1   8  15  14  13  12  11  10   9
+t0028:640751:641156 [5] NCCL INFO Trees [0] 14/-1/-1->13->12 [1] 14/-1/-1->13->12 [2] 14/-1/-1->13->12 [3] -1/-1/-1->13->12 [4] 14/-1/-1->13->12 [5] 14/-1/-1->13->12 [6] 14/-1/-1->13->12 [7] -1/-1/-1->13->12
+t0028:640751:641156 [5] NCCL INFO P2P Chunksize set to 131072
+t0016:2103125:2103531 [0] NCCL INFO Channel 01/08 :    0   7   6   5   4   3  10   9   8  15  14  13  12  11   2   1
+t0016:2103127:2103558 [2] NCCL INFO Trees [0] 3/-1/-1->2->1 [1] 3/10/-1->2->-1 [2] 3/-1/-1->2->1 [3] 3/-1/-1->2->1 [4] 3/-1/-1->2->1 [5] 3/-1/-1->2->10 [6] 3/-1/-1->2->1 [7] 3/-1/-1->2->1
+t0016:2103125:2103531 [0] NCCL INFO Channel 02/08 :    0   7   6   5  12  11  10   9   8  15  14  13   4   3   2   1
+t0016:2103130:2103553 [5] NCCL INFO Trees [0] 6/-1/-1->5->4 [1] 6/-1/-1->5->4 [2] 6/-1/-1->5->4 [3] -1/-1/-1->5->4 [4] 6/-1/-1->5->4 [5] 6/-1/-1->5->4 [6] 6/-1/-1->5->4 [7] -1/-1/-1->5->4
+t0028:640746:641150 [0] NCCL INFO Trees [0] 9/-1/-1->8->0 [1] 9/-1/-1->8->15 [2] 9/-1/-1->8->15 [3] 9/-1/-1->8->15 [4] 9/0/-1->8->-1 [5] 9/-1/-1->8->15 [6] 9/-1/-1->8->15 [7] 9/-1/-1->8->15
+t0028:640748:641154 [2] NCCL INFO Trees [0] 11/-1/-1->10->9 [1] 11/-1/-1->10->2 [2] 11/-1/-1->10->9 [3] 11/-1/-1->10->9 [4] 11/-1/-1->10->9 [5] 11/2/-1->10->-1 [6] 11/-1/-1->10->9 [7] 11/-1/-1->10->9
+t0028:640746:641150 [0] NCCL INFO P2P Chunksize set to 131072
+t0016:2103127:2103558 [2] NCCL INFO P2P Chunksize set to 131072
+t0016:2103125:2103531 [0] NCCL INFO Channel 03/08 :    0   7  14  13  12  11  10   9   8  15   6   5   4   3   2   1
+t0016:2103130:2103553 [5] NCCL INFO P2P Chunksize set to 131072
+t0016:2103125:2103531 [0] NCCL INFO Channel 04/08 :    0   7   6   5   4   3   2   1   8  15  14  13  12  11  10   9
+t0016:2103129:2103533 [4] NCCL INFO Trees [0] 5/-1/-1->4->3 [1] 5/-1/-1->4->3 [2] 5/12/-1->4->-1 [3] 5/-1/-1->4->3 [4] 5/-1/-1->4->3 [5] 5/-1/-1->4->3 [6] 5/-1/-1->4->12 [7] 5/-1/-1->4->3
+t0016:2103125:2103531 [0] NCCL INFO Channel 05/08 :    0   7   6   5   4   3  10   9   8  15  14  13  12  11   2   1
+t0016:2103129:2103533 [4] NCCL INFO P2P Chunksize set to 131072
+t0028:640748:641154 [2] NCCL INFO P2P Chunksize set to 131072
+t0028:640752:641151 [6] NCCL INFO Trees [0] 15/-1/-1->14->13 [1] 15/-1/-1->14->13 [2] 15/-1/-1->14->13 [3] 15/-1/-1->14->6 [4] 15/-1/-1->14->13 [5] 15/-1/-1->14->13 [6] 15/-1/-1->14->13 [7] 15/6/-1->14->-1
+t0016:2103125:2103531 [0] NCCL INFO Channel 06/08 :    0   7   6   5  12  11  10   9   8  15  14  13   4   3   2   1
+t0016:2103125:2103531 [0] NCCL INFO Channel 07/08 :    0   7  14  13  12  11  10   9   8  15   6   5   4   3   2   1
+t0016:2103125:2103531 [0] NCCL INFO Trees [0] 1/8/-1->0->-1 [1] 1/-1/-1->0->7 [2] 1/-1/-1->0->7 [3] 1/-1/-1->0->7 [4] 1/-1/-1->0->8 [5] 1/-1/-1->0->7 [6] 1/-1/-1->0->7 [7] 1/-1/-1->0->7
+t0016:2103132:2103534 [7] NCCL INFO Trees [0] -1/-1/-1->7->6 [1] 0/-1/-1->7->6 [2] 0/-1/-1->7->6 [3] 0/-1/-1->7->6 [4] -1/-1/-1->7->6 [5] 0/-1/-1->7->6 [6] 0/-1/-1->7->6 [7] 0/-1/-1->7->6
+t0016:2103125:2103531 [0] NCCL INFO P2P Chunksize set to 131072
+t0028:640752:641151 [6] NCCL INFO P2P Chunksize set to 131072
+t0028:640750:641153 [4] NCCL INFO Trees [0] 13/-1/-1->12->11 [1] 13/-1/-1->12->11 [2] 13/-1/-1->12->4 [3] 13/-1/-1->12->11 [4] 13/-1/-1->12->11 [5] 13/-1/-1->12->11 [6] 13/4/-1->12->-1 [7] 13/-1/-1->12->11
+t0016:2103132:2103534 [7] NCCL INFO P2P Chunksize set to 131072
+t0016:2103128:2103551 [3] NCCL INFO comm 0x55a13371df20 rank 3 nRanks 16 nNodes 2 localRanks 8 localRank 3 MNNVL 0
+t0016:2103131:2103532 [6] NCCL INFO Trees [0] 7/-1/-1->6->5 [1] 7/-1/-1->6->5 [2] 7/-1/-1->6->5 [3] 7/14/-1->6->-1 [4] 7/-1/-1->6->5 [5] 7/-1/-1->6->5 [6] 7/-1/-1->6->5 [7] 7/-1/-1->6->14
+t0016:2103131:2103532 [6] NCCL INFO P2P Chunksize set to 131072
+t0028:640750:641153 [4] NCCL INFO P2P Chunksize set to 131072
+t0016:2103126:2103552 [1] NCCL INFO Trees [0] 2/-1/-1->1->0 [1] -1/-1/-1->1->0 [2] 2/-1/-1->1->0 [3] 2/-1/-1->1->0 [4] 2/-1/-1->1->0 [5] -1/-1/-1->1->0 [6] 2/-1/-1->1->0 [7] 2/-1/-1->1->0
+t0028:640753:641155 [7] NCCL INFO Trees [0] -1/-1/-1->15->14 [1] 8/-1/-1->15->14 [2] 8/-1/-1->15->14 [3] 8/-1/-1->15->14 [4] -1/-1/-1->15->14 [5] 8/-1/-1->15->14 [6] 8/-1/-1->15->14 [7] 8/-1/-1->15->14
+t0016:2103126:2103552 [1] NCCL INFO P2P Chunksize set to 131072
+t0016:2103128:2103551 [3] NCCL INFO Trees [0] 4/-1/-1->3->2 [1] 4/-1/-1->3->2 [2] -1/-1/-1->3->2 [3] 4/-1/-1->3->2 [4] 4/-1/-1->3->2 [5] 4/-1/-1->3->2 [6] -1/-1/-1->3->2 [7] 4/-1/-1->3->2
+t0028:640753:641155 [7] NCCL INFO P2P Chunksize set to 131072
+t0028:640747:641157 [1] NCCL INFO Trees [0] 10/-1/-1->9->8 [1] -1/-1/-1->9->8 [2] 10/-1/-1->9->8 [3] 10/-1/-1->9->8 [4] 10/-1/-1->9->8 [5] -1/-1/-1->9->8 [6] 10/-1/-1->9->8 [7] 10/-1/-1->9->8
+t0016:2103128:2103551 [3] NCCL INFO P2P Chunksize set to 131072
+t0028:640747:641157 [1] NCCL INFO P2P Chunksize set to 131072
+t0028:640749:641152 [3] NCCL INFO Trees [0] 12/-1/-1->11->10 [1] 12/-1/-1->11->10 [2] -1/-1/-1->11->10 [3] 12/-1/-1->11->10 [4] 12/-1/-1->11->10 [5] 12/-1/-1->11->10 [6] -1/-1/-1->11->10 [7] 12/-1/-1->11->10
+t0028:640749:641152 [3] NCCL INFO P2P Chunksize set to 131072
+t0016:2103128:2103551 [3] NCCL INFO Channel 01/0 : 3[3] -> 10[2] [send] via NET/IB/0
+t0016:2103128:2103551 [3] NCCL INFO Channel 05/0 : 3[3] -> 10[2] [send] via NET/IB/0
+t0028:640749:641152 [3] NCCL INFO Channel 01/0 : 11[3] -> 2[2] [send] via NET/IB/0
+t0028:640749:641152 [3] NCCL INFO Channel 05/0 : 11[3] -> 2[2] [send] via NET/IB/0
+t0028:640752:641151 [6] NCCL INFO Channel 03/0 : 7[7] -> 14[6] [receive] via NET/IB/2
+t0028:640752:641151 [6] NCCL INFO Channel 07/0 : 7[7] -> 14[6] [receive] via NET/IB/2
+t0016:2103130:2103553 [5] NCCL INFO Channel 02/0 : 5[5] -> 12[4] [send] via NET/IB/3
+t0016:2103130:2103553 [5] NCCL INFO Channel 06/0 : 5[5] -> 12[4] [send] via NET/IB/3
+t0016:2103125:2103531 [0] NCCL INFO Channel 00/0 : 9[1] -> 0[0] [receive] via NET/IB/1
+t0016:2103125:2103531 [0] NCCL INFO Channel 04/0 : 9[1] -> 0[0] [receive] via NET/IB/1
+t0016:2103125:2103531 [0] NCCL INFO Channel 00/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 01/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 02/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 03/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 01/0 : 11[3] -> 2[2] [receive] via NET/IB/0
+t0016:2103127:2103558 [2] NCCL INFO Channel 05/0 : 11[3] -> 2[2] [receive] via NET/IB/0
+t0016:2103125:2103531 [0] NCCL INFO Channel 04/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 02/0 : 13[5] -> 4[4] [send] via NET/IB/3
+t0016:2103125:2103531 [0] NCCL INFO Channel 05/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 06/0 : 13[5] -> 4[4] [send] via NET/IB/3
+t0028:640748:641154 [2] NCCL INFO Channel 01/0 : 3[3] -> 10[2] [receive] via NET/IB/0
+t0028:640748:641154 [2] NCCL INFO Channel 05/0 : 3[3] -> 10[2] [receive] via NET/IB/0
+t0016:2103125:2103531 [0] NCCL INFO Channel 06/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 03/0 : 15[7] -> 6[6] [receive] via NET/IB/2
+t0028:640747:641157 [1] NCCL INFO Channel 00/0 : 9[1] -> 0[0] [send] via NET/IB/1
+t0028:640747:641157 [1] NCCL INFO Channel 04/0 : 9[1] -> 0[0] [send] via NET/IB/1
+t0016:2103131:2103532 [6] NCCL INFO Channel 07/0 : 15[7] -> 6[6] [receive] via NET/IB/2
+t0016:2103126:2103552 [1] NCCL INFO Channel 00/0 : 1[1] -> 8[0] [send] via NET/IB/1
+t0016:2103126:2103552 [1] NCCL INFO Channel 04/0 : 1[1] -> 8[0] [send] via NET/IB/1
+t0016:2103125:2103531 [0] NCCL INFO Channel 07/0 : 0[0] -> 7[7] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 02/0 : 13[5] -> 4[4] [receive] via NET/IB/3
+t0028:640746:641150 [0] NCCL INFO Channel 00/0 : 1[1] -> 8[0] [receive] via NET/IB/1
+t0016:2103129:2103533 [4] NCCL INFO Channel 06/0 : 13[5] -> 4[4] [receive] via NET/IB/3
+t0028:640746:641150 [0] NCCL INFO Channel 04/0 : 1[1] -> 8[0] [receive] via NET/IB/1
+t0028:640746:641150 [0] NCCL INFO Channel 00/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 02/0 : 5[5] -> 12[4] [receive] via NET/IB/3
+t0028:640750:641153 [4] NCCL INFO Channel 06/0 : 5[5] -> 12[4] [receive] via NET/IB/3
+t0028:640746:641150 [0] NCCL INFO Channel 01/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 02/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 03/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 03/0 : 15[7] -> 6[6] [send] via NET/IB/2
+t0028:640753:641155 [7] NCCL INFO Channel 07/0 : 15[7] -> 6[6] [send] via NET/IB/2
+t0028:640746:641150 [0] NCCL INFO Channel 04/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 00/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 00/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 00/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 01/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 02/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 05/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 01/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 01/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 02/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 03/0 : 7[7] -> 14[6] [send] via NET/IB/2
+t0016:2103132:2103534 [7] NCCL INFO Channel 07/0 : 7[7] -> 14[6] [send] via NET/IB/2
+t0016:2103127:2103558 [2] NCCL INFO Channel 02/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 03/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 03/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 06/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 00/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 00/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 00/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 00/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 04/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 07/0 : 8[0] -> 15[7] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 04/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 01/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 00/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 03/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 00/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 01/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 00/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 05/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 02/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 00/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 01/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 02/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 05/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 01/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 02/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 02/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 03/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 01/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 01/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 02/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 01/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 04/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 06/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 04/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 03/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 02/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 06/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 03/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 02/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 04/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 04/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 03/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 05/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 03/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 07/0 : 10[2] -> 9[1] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 03/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 05/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 05/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 06/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 04/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 04/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 04/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 04/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 07/0 : 4[4] -> 3[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 06/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 05/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 06/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 03/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 04/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 05/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 06/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 06/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 06/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 00/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 07/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 06/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 07/0 : 6[6] -> 5[5] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 05/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 07/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 01/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 05/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 05/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 07/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 07/0 : 12[4] -> 11[3] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 07/0 : 2[2] -> 1[1] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 06/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 07/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 07/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 02/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 03/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 04/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 05/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 06/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 02/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 03/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 07/0 : 14[6] -> 13[5] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 05/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 06/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 07/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Connected all rings
+t0028:640751:641156 [5] NCCL INFO Connected all rings
+t0028:640751:641156 [5] NCCL INFO Channel 00/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 01/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 02/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 04/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 05/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 06/0 : 13[5] -> 14[6] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 00/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Connected all rings
+t0016:2103127:2103558 [2] NCCL INFO Connected all rings
+t0028:640750:641153 [4] NCCL INFO Connected all rings
+t0028:640749:641152 [3] NCCL INFO Connected all rings
+t0016:2103129:2103533 [4] NCCL INFO Channel 01/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Connected all rings
+t0016:2103126:2103552 [1] NCCL INFO Connected all rings
+t0016:2103125:2103531 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Connected all rings
+t0028:640746:641150 [0] NCCL INFO Channel 00/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Connected all rings
+t0028:640747:641157 [1] NCCL INFO Connected all rings
+t0016:2103129:2103533 [4] NCCL INFO Channel 02/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 01/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Connected all rings
+t0028:640752:641151 [6] NCCL INFO Connected all rings
+t0028:640753:641155 [7] NCCL INFO Connected all rings
+t0016:2103132:2103534 [7] NCCL INFO Connected all rings
+t0016:2103131:2103532 [6] NCCL INFO Connected all rings
+t0028:640746:641150 [0] NCCL INFO Channel 02/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 02/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 03/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 03/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 00/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 04/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 01/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 04/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 03/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 05/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 02/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 05/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 00/0 : 3[3] -> 4[4] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 06/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 00/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 03/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 04/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 06/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 04/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 01/0 : 3[3] -> 4[4] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 07/0 : 8[0] -> 9[1] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 01/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 07/0 : 4[4] -> 5[5] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 00/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 03/0 : 3[3] -> 4[4] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 05/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 00/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 03/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 06/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 05/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 04/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 01/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 00/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 04/0 : 3[3] -> 4[4] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 01/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 07/0 : 12[4] -> 13[5] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 00/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 00/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 06/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 02/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 00/0 : 5[5] -> 6[6] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 02/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 03/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 03/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 04/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 02/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 05/0 : 3[3] -> 4[4] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 07/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 04/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 01/0 : 5[5] -> 6[6] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 05/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 02/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 06/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 06/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0028:640747:641157 [1] NCCL INFO Channel 07/0 : 9[1] -> 10[2] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 05/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 01/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 02/0 : 5[5] -> 6[6] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 03/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 07/0 : 14[6] -> 15[7] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 07/0 : 11[3] -> 12[4] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 03/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 07/0 : 3[3] -> 4[4] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 04/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [receive] via NET/IB/1
+t0028:640748:641154 [2] NCCL INFO Channel 01/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 04/0 : 0[0] -> 8[0] [receive] via NET/IB/1
+t0028:640751:641156 [5] NCCL INFO Channel 02/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 01/0 : 15[7] -> 8[0] via P2P/CUMEM/read
+t0028:640746:641150 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [send] via NET/IB/1
+t0028:640746:641150 [0] NCCL INFO Channel 04/0 : 8[0] -> 0[0] [send] via NET/IB/1
+t0028:640752:641151 [6] NCCL INFO Channel 03/0 : 6[6] -> 14[6] [receive] via NET/IB/2
+t0028:640752:641151 [6] NCCL INFO Channel 07/0 : 6[6] -> 14[6] [receive] via NET/IB/2
+t0028:640752:641151 [6] NCCL INFO Channel 03/0 : 14[6] -> 6[6] [send] via NET/IB/2
+t0016:2103126:2103552 [1] NCCL INFO Channel 06/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+t0028:640752:641151 [6] NCCL INFO Channel 07/0 : 14[6] -> 6[6] [send] via NET/IB/2
+t0028:640748:641154 [2] NCCL INFO Channel 02/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 02/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 02/0 : 15[7] -> 8[0] via P2P/CUMEM/read
+t0028:640751:641156 [5] NCCL INFO Channel 06/0 : 13[5] -> 12[4] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 07/0 : 1[1] -> 2[2] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 02/0 : 4[4] -> 12[4] [receive] via NET/IB/3
+t0016:2103130:2103553 [5] NCCL INFO Channel 04/0 : 5[5] -> 6[6] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 06/0 : 4[4] -> 12[4] [receive] via NET/IB/3
+t0016:2103131:2103532 [6] NCCL INFO Channel 03/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 02/0 : 12[4] -> 4[4] [send] via NET/IB/3
+t0028:640753:641155 [7] NCCL INFO Channel 03/0 : 15[7] -> 8[0] via P2P/CUMEM/read
+t0028:640750:641153 [4] NCCL INFO Channel 06/0 : 12[4] -> 4[4] [send] via NET/IB/3
+t0028:640748:641154 [2] NCCL INFO Channel 03/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 04/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 04/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 05/0 : 15[7] -> 8[0] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 05/0 : 5[5] -> 6[6] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 04/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 00/0 : 8[0] -> 0[0] [receive] via NET/IB/1
+t0028:640753:641155 [7] NCCL INFO Channel 06/0 : 15[7] -> 8[0] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 04/0 : 8[0] -> 0[0] [receive] via NET/IB/1
+t0016:2103130:2103553 [5] NCCL INFO Channel 06/0 : 5[5] -> 6[6] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 00/0 : 0[0] -> 8[0] [send] via NET/IB/1
+t0028:640748:641154 [2] NCCL INFO Channel 05/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103125:2103531 [0] NCCL INFO Channel 04/0 : 0[0] -> 8[0] [send] via NET/IB/1
+t0016:2103127:2103558 [2] NCCL INFO Channel 05/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 05/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 07/0 : 15[7] -> 8[0] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 06/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 06/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 06/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0016:2103129:2103533 [4] NCCL INFO Channel 02/0 : 12[4] -> 4[4] [receive] via NET/IB/3
+t0016:2103129:2103533 [4] NCCL INFO Channel 06/0 : 12[4] -> 4[4] [receive] via NET/IB/3
+t0016:2103129:2103533 [4] NCCL INFO Channel 02/0 : 4[4] -> 12[4] [send] via NET/IB/3
+t0016:2103129:2103533 [4] NCCL INFO Channel 06/0 : 4[4] -> 12[4] [send] via NET/IB/3
+t0016:2103127:2103558 [2] NCCL INFO Channel 07/0 : 2[2] -> 3[3] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 07/0 : 6[6] -> 7[7] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 07/0 : 10[2] -> 11[3] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 02/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 01/0 : 7[7] -> 0[0] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 01/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0016:2103131:2103532 [6] NCCL INFO Channel 03/0 : 14[6] -> 6[6] [receive] via NET/IB/2
+t0016:2103127:2103558 [2] NCCL INFO Channel 01/0 : 10[2] -> 2[2] [receive] via NET/IB/0
+t0016:2103131:2103532 [6] NCCL INFO Channel 07/0 : 14[6] -> 6[6] [receive] via NET/IB/2
+t0016:2103127:2103558 [2] NCCL INFO Channel 05/0 : 10[2] -> 2[2] [receive] via NET/IB/0
+t0016:2103131:2103532 [6] NCCL INFO Channel 03/0 : 6[6] -> 14[6] [send] via NET/IB/2
+t0016:2103127:2103558 [2] NCCL INFO Channel 01/0 : 2[2] -> 10[2] [send] via NET/IB/0
+t0016:2103131:2103532 [6] NCCL INFO Channel 07/0 : 6[6] -> 14[6] [send] via NET/IB/2
+t0028:640747:641157 [1] NCCL INFO Channel 00/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0016:2103127:2103558 [2] NCCL INFO Channel 05/0 : 2[2] -> 10[2] [send] via NET/IB/0
+t0028:640749:641152 [3] NCCL INFO Channel 01/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0028:640748:641154 [2] NCCL INFO Channel 01/0 : 2[2] -> 10[2] [receive] via NET/IB/0
+t0028:640748:641154 [2] NCCL INFO Channel 05/0 : 2[2] -> 10[2] [receive] via NET/IB/0
+t0028:640748:641154 [2] NCCL INFO Channel 01/0 : 10[2] -> 2[2] [send] via NET/IB/0
+t0028:640748:641154 [2] NCCL INFO Channel 05/0 : 10[2] -> 2[2] [send] via NET/IB/0
+t0028:640747:641157 [1] NCCL INFO Channel 04/0 : 9[1] -> 8[0] via P2P/CUMEM/read
+t0016:2103126:2103552 [1] NCCL INFO Channel 04/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 02/0 : 7[7] -> 0[0] via P2P/CUMEM/read
+t0016:2103130:2103553 [5] NCCL INFO Channel 06/0 : 5[5] -> 4[4] via P2P/CUMEM/read
+t0028:640749:641152 [3] NCCL INFO Channel 05/0 : 11[3] -> 10[2] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Channel 05/0 : 3[3] -> 2[2] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 03/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 03/0 : 7[7] -> 0[0] via P2P/CUMEM/read
+t0028:640753:641155 [7] NCCL INFO Channel 07/0 : 15[7] -> 14[6] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 05/0 : 7[7] -> 0[0] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 06/0 : 7[7] -> 0[0] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 07/0 : 7[7] -> 0[0] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 03/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0016:2103132:2103534 [7] NCCL INFO Channel 07/0 : 7[7] -> 6[6] via P2P/CUMEM/read
+t0016:2103128:2103551 [3] NCCL INFO Connected all trees
+t0016:2103127:2103558 [2] NCCL INFO Connected all trees
+t0016:2103128:2103551 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103128:2103551 [3] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103127:2103558 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103127:2103558 [2] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640748:641154 [2] NCCL INFO Connected all trees
+t0028:640749:641152 [3] NCCL INFO Connected all trees
+t0028:640748:641154 [2] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640748:641154 [2] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640749:641152 [3] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640749:641152 [3] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103125:2103531 [0] NCCL INFO Connected all trees
+t0016:2103125:2103531 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103125:2103531 [0] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103130:2103553 [5] NCCL INFO Connected all trees
+t0016:2103129:2103533 [4] NCCL INFO Connected all trees
+t0016:2103130:2103553 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103130:2103553 [5] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640750:641153 [4] NCCL INFO Connected all trees
+t0028:640751:641156 [5] NCCL INFO Connected all trees
+t0028:640750:641153 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103129:2103533 [4] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103129:2103533 [4] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640750:641153 [4] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640751:641156 [5] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640751:641156 [5] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640747:641157 [1] NCCL INFO Connected all trees
+t0028:640746:641150 [0] NCCL INFO Connected all trees
+t0028:640747:641157 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640747:641157 [1] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640753:641155 [7] NCCL INFO Connected all trees
+t0028:640752:641151 [6] NCCL INFO Connected all trees
+t0028:640746:641150 [0] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640746:641150 [0] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640753:641155 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640753:641155 [7] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0028:640752:641151 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0028:640752:641151 [6] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103132:2103534 [7] NCCL INFO Connected all trees
+t0016:2103131:2103532 [6] NCCL INFO Connected all trees
+t0016:2103132:2103534 [7] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103132:2103534 [7] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103131:2103532 [6] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103131:2103532 [6] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103126:2103552 [1] NCCL INFO Connected all trees
+t0016:2103126:2103552 [1] NCCL INFO threadThresholds 8/8/64 | 128/8/64 | 512 | 512
+t0016:2103126:2103552 [1] NCCL INFO 8 coll channels, 8 collnet channels, 0 nvls channels, 8 p2p channels, 2 p2p channels per peer
+t0016:2103128:2103551 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103128:2103551 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103128:2103551 [3] NCCL INFO ncclCommInitRank comm 0x55a13371df20 rank 3 nranks 16 cudaDev 3 nvmlDev 3 busId 4d000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103125:2103531 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103125:2103531 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103127:2103558 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103127:2103558 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103125:2103531 [0] NCCL INFO ncclCommInitRank comm 0x55f73638d650 rank 0 nranks 16 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103127:2103558 [2] NCCL INFO ncclCommInitRank comm 0x5594031d9ab0 rank 2 nranks 16 cudaDev 2 nvmlDev 2 busId 47000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103132:2103534 [7] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103129:2103533 [4] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103131:2103532 [6] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103129:2103533 [4] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103132:2103534 [7] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103130:2103553 [5] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103131:2103532 [6] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103129:2103533 [4] NCCL INFO ncclCommInitRank comm 0x556413ffd320 rank 4 nranks 16 cudaDev 4 nvmlDev 4 busId 87000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103130:2103553 [5] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103132:2103534 [7] NCCL INFO ncclCommInitRank comm 0x555c54873550 rank 7 nranks 16 cudaDev 7 nvmlDev 7 busId ca000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103126:2103552 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:2103131:2103532 [6] NCCL INFO ncclCommInitRank comm 0x55e3341097f0 rank 6 nranks 16 cudaDev 6 nvmlDev 6 busId c7000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103130:2103553 [5] NCCL INFO ncclCommInitRank comm 0x555749bcaf40 rank 5 nranks 16 cudaDev 5 nvmlDev 5 busId 8d000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0016:2103126:2103552 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:2103126:2103552 [1] NCCL INFO ncclCommInitRank comm 0x55a20d690f10 rank 1 nranks 16 cudaDev 1 nvmlDev 1 busId a000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640746:641150 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640746:641150 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640746:641150 [0] NCCL INFO ncclCommInitRank comm 0x558874e1a5f0 rank 8 nranks 16 cudaDev 0 nvmlDev 0 busId 7000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640753:641155 [7] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640753:641155 [7] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640753:641155 [7] NCCL INFO ncclCommInitRank comm 0x5628e9e85160 rank 15 nranks 16 cudaDev 7 nvmlDev 7 busId ca000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640751:641156 [5] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640749:641152 [3] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640752:641151 [6] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640751:641156 [5] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640749:641152 [3] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640752:641151 [6] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640747:641157 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640751:641156 [5] NCCL INFO ncclCommInitRank comm 0x560f273fe520 rank 13 nranks 16 cudaDev 5 nvmlDev 5 busId 8d000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640750:641153 [4] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640747:641157 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640749:641152 [3] NCCL INFO ncclCommInitRank comm 0x55bb6a5294b0 rank 11 nranks 16 cudaDev 3 nvmlDev 3 busId 4d000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640752:641151 [6] NCCL INFO ncclCommInitRank comm 0x5595f9d58190 rank 14 nranks 16 cudaDev 6 nvmlDev 6 busId c7000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640750:641153 [4] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640747:641157 [1] NCCL INFO ncclCommInitRank comm 0x56155b245870 rank 9 nranks 16 cudaDev 1 nvmlDev 1 busId a000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640750:641153 [4] NCCL INFO ncclCommInitRank comm 0x56436cb0e1d0 rank 12 nranks 16 cudaDev 4 nvmlDev 4 busId 87000 commId 0xb80508f238cdc03 - Init COMPLETE
+t0028:640748:641154 [2] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0028:640748:641154 [2] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0028:640748:641154 [2] NCCL INFO ncclCommInitRank comm 0x563854e1f4a0 rank 10 nranks 16 cudaDev 2 nvmlDev 2 busId 47000 commId 0xb80508f238cdc03 - Init COMPLETE
+Epoch 1, step 0, loss=9.8603
+Epoch 1, step 10, loss=nan
+Epoch 1, step 20, loss=nan
+Epoch 1, step 30, loss=nan
+Epoch 1, step 40, loss=nan
+Epoch 1, step 50, loss=nan
+Epoch 1, step 60, loss=nan
+Epoch 1, step 70, loss=nan
+Epoch 1, step 80, loss=nan
+Epoch 1, step 90, loss=nan
+Epoch 1, step 100, loss=nan
+Epoch 1, step 110, loss=nan
+Epoch 1, step 120, loss=nan
+Epoch 1, step 130, loss=nan
+Epoch 1, step 140, loss=nan
