@@ -19,12 +19,37 @@ We compare two distributed approaches implemented in this repository:
 | DeepSpeed ZeRO-3 + `Trainer` | Easy large-model training | Low to medium | Add a DeepSpeed config to `TrainingArguments` |
 | Native PyTorch FSDP | Maximum control | High | Manually initialize distributed training and shard the model |
 
+## Experimental Setup
+
+Both distributed jobs use the same model, dataset, and training objective so the
+comparison focuses on the distributed training method rather than a difference
+in data or architecture.
+
+| Item | Value |
+| --- | --- |
+| Model | `bigscience/bloom-3b` |
+| Task | Causal language modeling |
+| Dataset | `wikitext` |
+| Dataset configuration | `wikitext-2-raw-v1` |
+| Split | `train` |
+| Epochs | `1` |
+| Sequence length | `512` tokens |
+| Per-device batch size | `2` |
+
 ## Baseline: Normal Transformers Training
 
 The default Hugging Face workflow is short and readable. After preparing a
 tokenizer, model, and dataset, training can be launched with `Trainer`.
 
 ```python
+model_name = "bigscience/bloom-3b"
+dataset_name = "wikitext"
+dataset_config = "wikitext-2-raw-v1"
+
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name)
+dataset = load_dataset(dataset_name, dataset_config, split="train")
+
 training_args = TrainingArguments(
     output_dir="./outputs/baseline",
     per_device_train_batch_size=2,
@@ -120,7 +145,7 @@ device = torch.device("cuda", local_rank)
 # added: bind each process to its local GPU
 
 model = AutoModelForCausalLM.from_pretrained(
-    model_name,
+    "bigscience/bloom-3b",
     torch_dtype=torch.float16,
 )
 
