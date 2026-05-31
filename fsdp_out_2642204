@@ -1,0 +1,213 @@
+t0013:3593385:3593385 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0013:3593385:3593385 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.13<0>
+t0013:3593385:3593385 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0013:3593385:3593385 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0013:3593385:3593385 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0013:3593385:3593385 [0] NCCL INFO cudaDriverVersion 12080
+NCCL version 2.21.5+cuda12.4
+t0013:3593386:3593386 [1] NCCL INFO cudaDriverVersion 12080
+t0013:3593386:3593386 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0013:3593386:3593386 [1] NCCL INFO Bootstrap : Using ib0:172.23.16.13<0>
+t0013:3593386:3593386 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0013:3593386:3593386 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0013:3593386:3593386 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+t0013:3593385:3593516 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0013:3593386:3593517 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0013:3593386:3593517 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0013:3593385:3593516 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0013:3593386:3593517 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.13<0>
+t0013:3593386:3593517 [1] NCCL INFO Using non-device net plugin version 0
+t0013:3593386:3593517 [1] NCCL INFO Using network IB
+t0013:3593385:3593516 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.13<0>
+t0013:3593385:3593516 [0] NCCL INFO Using non-device net plugin version 0
+t0013:3593385:3593516 [0] NCCL INFO Using network IB
+t0016:3516793:3516793 [0] NCCL INFO cudaDriverVersion 12080
+t0016:3516793:3516793 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3516793:3516793 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:3516793:3516793 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:3516793:3516793 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:3516793:3516793 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:3516793:3516916 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:3516793:3516916 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3516793:3516916 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:3516793:3516916 [0] NCCL INFO Using non-device net plugin version 0
+t0016:3516793:3516916 [0] NCCL INFO Using network IB
+t0016:3516794:3516794 [1] NCCL INFO cudaDriverVersion 12080
+t0016:3516794:3516794 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3516794:3516794 [1] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:3516794:3516794 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:3516794:3516794 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:3516794:3516794 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:3516794:3516935 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:3516794:3516935 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3516794:3516935 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:3516794:3516935 [1] NCCL INFO Using non-device net plugin version 0
+t0016:3516794:3516935 [1] NCCL INFO Using network IB
+t0016:3516794:3516935 [1] NCCL INFO ncclCommInitRank comm 0x55e001ce6000 rank 3 nranks 4 cudaDev 1 nvmlDev 1 busId 4d000 commId 0x4a786397c0d0f6b7 - Init START
+t0013:3593386:3593517 [1] NCCL INFO ncclCommInitRank comm 0x5605526bcf40 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 8d000 commId 0x4a786397c0d0f6b7 - Init START
+t0013:3593385:3593516 [0] NCCL INFO ncclCommInitRank comm 0x556cbd6c7160 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 87000 commId 0x4a786397c0d0f6b7 - Init START
+t0016:3516793:3516916 [0] NCCL INFO ncclCommInitRank comm 0x56393dec85a0 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId 7000 commId 0x4a786397c0d0f6b7 - Init START
+t0016:3516794:3516935 [1] NCCL INFO Setting affinity for GPU 1 to 0f00
+t0016:3516794:3516935 [1] NCCL INFO comm 0x55e001ce6000 rank 3 nRanks 4 nNodes 2 localRanks 2 localRank 1 MNNVL 0
+t0016:3516793:3516916 [0] NCCL INFO comm 0x56393dec85a0 rank 2 nRanks 4 nNodes 2 localRanks 2 localRank 0 MNNVL 0
+t0016:3516794:3516935 [1] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+t0016:3516794:3516935 [1] NCCL INFO P2P Chunksize set to 131072
+t0016:3516793:3516916 [0] NCCL INFO Trees [0] 3/-1/-1->2->0 [1] 3/0/-1->2->-1
+t0016:3516793:3516916 [0] NCCL INFO P2P Chunksize set to 131072
+t0013:3593386:3593517 [1] NCCL INFO comm 0x5605526bcf40 rank 1 nRanks 4 nNodes 2 localRanks 2 localRank 1 MNNVL 0
+t0013:3593385:3593516 [0] NCCL INFO comm 0x556cbd6c7160 rank 0 nRanks 4 nNodes 2 localRanks 2 localRank 0 MNNVL 0
+t0013:3593386:3593517 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+t0013:3593386:3593517 [1] NCCL INFO P2P Chunksize set to 131072
+t0013:3593385:3593516 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+t0013:3593385:3593516 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+t0013:3593385:3593516 [0] NCCL INFO Trees [0] 1/2/-1->0->-1 [1] 1/-1/-1->0->2
+t0013:3593385:3593516 [0] NCCL INFO P2P Chunksize set to 131072
+t0016:3516793:3516916 [0] NCCL INFO Channel 00/0 : 1[1] -> 2[0] [receive] via NET/IB/1
+t0016:3516793:3516916 [0] NCCL INFO Channel 01/0 : 1[1] -> 2[0] [receive] via NET/IB/1
+t0016:3516793:3516916 [0] NCCL INFO Channel 00/0 : 2[0] -> 3[1] via P2P/CUMEM/read
+t0016:3516793:3516916 [0] NCCL INFO Channel 01/0 : 2[0] -> 3[1] via P2P/CUMEM/read
+t0016:3516794:3516935 [1] NCCL INFO Channel 00/0 : 3[1] -> 0[0] [send] via NET/IB/0
+t0016:3516794:3516935 [1] NCCL INFO Channel 01/0 : 3[1] -> 0[0] [send] via NET/IB/0
+t0013:3593386:3593517 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[0] [send] via NET/IB/0
+t0013:3593385:3593516 [0] NCCL INFO Channel 00/0 : 3[1] -> 0[0] [receive] via NET/IB/0
+t0013:3593385:3593516 [0] NCCL INFO Channel 01/0 : 3[1] -> 0[0] [receive] via NET/IB/0
+t0013:3593385:3593516 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0013:3593386:3593517 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[0] [send] via NET/IB/0
+t0013:3593385:3593516 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0016:3516793:3516916 [0] NCCL INFO Connected all rings
+t0016:3516794:3516935 [1] NCCL INFO Connected all rings
+t0013:3593385:3593516 [0] NCCL INFO Connected all rings
+t0013:3593386:3593517 [1] NCCL INFO Connected all rings
+t0013:3593386:3593517 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:3516793:3516916 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [receive] via NET/IB/2
+t0016:3516794:3516935 [1] NCCL INFO Channel 00/0 : 3[1] -> 2[0] via P2P/CUMEM/read
+t0016:3516793:3516916 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[0] [receive] via NET/IB/2
+t0016:3516793:3516916 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [send] via NET/IB/2
+t0016:3516793:3516916 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] [send] via NET/IB/2
+t0013:3593385:3593516 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [receive] via NET/IB/0
+t0016:3516794:3516935 [1] NCCL INFO Channel 01/0 : 3[1] -> 2[0] via P2P/CUMEM/read
+t0013:3593385:3593516 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] [receive] via NET/IB/0
+t0013:3593385:3593516 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [send] via NET/IB/0
+t0013:3593385:3593516 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[0] [send] via NET/IB/0
+t0013:3593386:3593517 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:3516793:3516916 [0] NCCL INFO Connected all trees
+t0013:3593385:3593516 [0] NCCL INFO Connected all trees
+t0013:3593386:3593517 [1] NCCL INFO Connected all trees
+t0016:3516793:3516916 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0016:3516793:3516916 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0013:3593385:3593516 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0013:3593385:3593516 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0013:3593386:3593517 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0013:3593386:3593517 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0016:3516794:3516935 [1] NCCL INFO Connected all trees
+t0016:3516794:3516935 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0016:3516794:3516935 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0016:3516794:3516935 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:3516794:3516935 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:3516794:3516935 [1] NCCL INFO ncclCommInitRank comm 0x55e001ce6000 rank 3 nranks 4 cudaDev 1 nvmlDev 1 busId 4d000 commId 0x4a786397c0d0f6b7 - Init COMPLETE
+t0016:3516793:3516916 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:3516793:3516916 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:3516793:3516916 [0] NCCL INFO ncclCommInitRank comm 0x56393dec85a0 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId 7000 commId 0x4a786397c0d0f6b7 - Init COMPLETE
+t0013:3593385:3593516 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0013:3593386:3593517 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0013:3593385:3593516 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0013:3593386:3593517 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0013:3593385:3593516 [0] NCCL INFO ncclCommInitRank comm 0x556cbd6c7160 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 87000 commId 0x4a786397c0d0f6b7 - Init COMPLETE
+t0013:3593386:3593517 [1] NCCL INFO ncclCommInitRank comm 0x5605526bcf40 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 8d000 commId 0x4a786397c0d0f6b7 - Init COMPLETE
+Epoch 1, step 0, loss=9.5112
+Epoch 1, step 10, loss=6.0299
+Epoch 1, step 20, loss=5.4846
+Epoch 1, step 30, loss=5.1711
+Epoch 1, step 40, loss=5.1494
+Epoch 1, step 50, loss=5.1073
+Epoch 1, step 60, loss=5.0342
+Epoch 1, step 70, loss=5.0255
+Epoch 1, step 80, loss=4.9815
+Epoch 1, step 90, loss=4.9330
+Epoch 1, step 100, loss=4.9586
+Epoch 1, step 110, loss=4.8356
+Epoch 1, step 120, loss=4.8720
+Epoch 1, step 130, loss=4.7732
+Epoch 1, step 140, loss=4.8790
+Epoch 1, step 150, loss=4.7845
+Epoch 1, step 160, loss=4.8334
+Epoch 1, step 170, loss=4.7468
+Epoch 1, step 180, loss=4.7876
+Epoch 1, step 190, loss=4.7017
+Epoch 1, step 200, loss=4.6986
+Epoch 1, step 210, loss=4.7712
+Epoch 1, step 220, loss=4.6070
+Epoch 1, step 230, loss=4.7534
+Epoch 1, step 240, loss=4.7362
+Epoch 1, step 250, loss=4.6418
+Epoch 1, step 260, loss=4.6679
+Epoch 1, step 270, loss=4.5827
+Epoch 1, step 280, loss=4.6361
+Epoch 1, step 290, loss=4.5995
+Epoch 1, step 300, loss=4.6344
+Epoch 1, step 310, loss=4.5798
+Epoch 1, step 320, loss=4.5305
+Epoch 1, step 330, loss=4.6659
+Epoch 1, step 340, loss=4.5212
+Epoch 1, step 350, loss=4.5281
+Epoch 1, step 360, loss=4.5864
+Epoch 1, step 370, loss=4.6675
+Epoch 1, step 380, loss=4.5912
+Epoch 1, step 390, loss=4.6895
+Epoch 1, step 400, loss=4.6286
+Epoch 1, step 410, loss=4.5461
+Epoch 1, step 420, loss=4.5538
+Epoch 1, step 430, loss=4.5142
+Epoch 1, step 440, loss=4.5461
+Epoch 1, step 450, loss=4.5139
+Epoch 1, step 460, loss=4.5183
+Epoch 1, step 470, loss=4.5002
+Epoch 1, step 480, loss=4.4433
+Epoch 1, step 490, loss=4.5248
+Epoch 1, step 500, loss=4.4845
+Epoch 1, step 510, loss=4.4490
+Epoch 1, step 520, loss=4.4411
+Epoch 1, step 530, loss=4.4718
+Epoch 1, step 540, loss=4.3982
+Epoch 1, step 550, loss=4.4089
+Epoch 1, step 560, loss=4.5112
+Epoch 1, step 570, loss=4.4314
+Epoch 1, step 580, loss=4.3808
+
+========================================
+FSDP TRAINING SUMMARY
+========================================
+Total training time:   752.1 s
+Training speed:        6.19 samples/s
+Final training loss:   4.2292
+========================================
+
+t0013:3593386:3593975 [1] NCCL INFO Channel 00/1 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0013:3593386:3593975 [1] NCCL INFO Channel 01/1 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0013:3593385:3593976 [0] NCCL INFO Channel 00/1 : 3[1] -> 0[0] [receive] via NET/IB/3/Shared
+t0013:3593385:3593976 [0] NCCL INFO Channel 01/1 : 3[1] -> 0[0] [receive] via NET/IB/3/Shared
+t0016:3516793:3517334 [0] NCCL INFO Channel 00/1 : 2[0] -> 0[0] [send] via NET/IB/1/Shared
+t0016:3516794:3517333 [1] NCCL INFO Channel 00/1 : 3[1] -> 0[0] [send] via NET/IB/0/Shared
+t0016:3516793:3517334 [0] NCCL INFO Channel 01/1 : 2[0] -> 0[0] [send] via NET/IB/1/Shared
+t0016:3516794:3517333 [1] NCCL INFO Channel 01/1 : 3[1] -> 0[0] [send] via NET/IB/0/Shared
+t0013:3593385:3593976 [0] NCCL INFO Channel 00/1 : 2[0] -> 0[0] [receive] via NET/IB/3/Shared
+t0013:3593385:3593976 [0] NCCL INFO Channel 01/1 : 2[0] -> 0[0] [receive] via NET/IB/3/Shared
+t0013:3593385:3593979 [0] NCCL INFO Channel 00/1 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0016:3516793:3517335 [0] NCCL INFO Channel 00/1 : 0[0] -> 2[0] [receive] via NET/IB/1/Shared
+t0016:3516793:3517335 [0] NCCL INFO Channel 01/1 : 0[0] -> 2[0] [receive] via NET/IB/1/Shared
+t0016:3516794:3517336 [1] NCCL INFO Channel 00/1 : 0[0] -> 3[1] [receive] via NET/IB/0/Shared
+t0016:3516794:3517336 [1] NCCL INFO Channel 01/1 : 0[0] -> 3[1] [receive] via NET/IB/0/Shared
+t0013:3593385:3593979 [0] NCCL INFO Channel 01/1 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0013:3593385:3593979 [0] NCCL INFO Channel 00/1 : 0[0] -> 2[0] [send] via NET/IB/3/Shared
+t0013:3593385:3593979 [0] NCCL INFO Channel 01/1 : 0[0] -> 2[0] [send] via NET/IB/3/Shared
+t0013:3593385:3593979 [0] NCCL INFO Channel 00/1 : 0[0] -> 3[1] [send] via NET/IB/3/Shared
+t0013:3593385:3593979 [0] NCCL INFO Channel 01/1 : 0[0] -> 3[1] [send] via NET/IB/3/Shared
+t0013:3593386:3593532 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+t0016:3516793:3516941 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+t0016:3516794:3516940 [1] NCCL INFO [Service thread] Connection closed by localRank 1
+=== Checkpoints SHARDED saved successfully to /net/tscratch/people/plgmwojnar99/outputs/fsdp_pytorch ===
+t0013:3593385:3593533 [0] NCCL INFO [Service thread] Connection closed by localRank 0
+t0013:3593386:3593981 [1] NCCL INFO comm 0x5605526bcf40 rank 1 nranks 4 cudaDev 1 busId 8d000 - Abort COMPLETE
+t0016:3516794:3517339 [1] NCCL INFO comm 0x55e001ce6000 rank 3 nranks 4 cudaDev 1 busId 4d000 - Abort COMPLETE
+t0016:3516793:3517340 [0] NCCL INFO comm 0x56393dec85a0 rank 2 nranks 4 cudaDev 0 busId 7000 - Abort COMPLETE
+t0013:3593385:3593982 [0] NCCL INFO comm 0x556cbd6c7160 rank 0 nranks 4 cudaDev 0 busId 87000 - Abort COMPLETE

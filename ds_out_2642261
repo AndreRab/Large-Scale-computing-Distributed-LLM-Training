@@ -1,0 +1,254 @@
+Skipping unsupported TrainingArguments: ['overwrite_output_dir']
+Skipping unsupported TrainingArguments: ['overwrite_output_dir']
+Skipping unsupported TrainingArguments: ['overwrite_output_dir']
+Skipping unsupported TrainingArguments: ['overwrite_output_dir']
+t0001:1351106:1351106 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0001:1351106:1351106 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.1<0>
+t0001:1351106:1351106 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0001:1351106:1351106 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0001:1351106:1351106 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0001:1351106:1351106 [0] NCCL INFO cudaDriverVersion 12080
+NCCL version 2.21.5+cuda12.4
+t0016:3579508:3579508 [0] NCCL INFO cudaDriverVersion 12080
+t0016:3579508:3579508 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3579508:3579508 [0] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:3579508:3579508 [0] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:3579508:3579508 [0] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:3579508:3579508 [0] NCCL INFO NET/Plugin: Using internal network plugin.
+t0001:1351107:1351107 [1] NCCL INFO cudaDriverVersion 12080
+t0001:1351107:1351107 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0001:1351107:1351107 [1] NCCL INFO Bootstrap : Using ib0:172.23.16.1<0>
+t0001:1351107:1351107 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0001:1351107:1351107 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0001:1351107:1351107 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+t0016:3579509:3579509 [1] NCCL INFO cudaDriverVersion 12080
+t0016:3579509:3579509 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3579509:3579509 [1] NCCL INFO Bootstrap : Using ib0:172.23.16.16<0>
+t0016:3579509:3579509 [1] NCCL INFO NET/Plugin: No plugin found (libnccl-net.so)
+t0016:3579509:3579509 [1] NCCL INFO NET/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-net.so
+t0016:3579509:3579509 [1] NCCL INFO NET/Plugin: Using internal network plugin.
+t0001:1351106:1351220 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0001:1351107:1351221 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0001:1351106:1351220 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0001:1351107:1351221 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0001:1351106:1351220 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.1<0>
+t0001:1351106:1351220 [0] NCCL INFO Using non-device net plugin version 0
+t0001:1351106:1351220 [0] NCCL INFO Using network IB
+t0001:1351107:1351221 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.1<0>
+t0001:1351107:1351221 [1] NCCL INFO Using non-device net plugin version 0
+t0001:1351107:1351221 [1] NCCL INFO Using network IB
+t0016:3579508:3579614 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:3579508:3579614 [0] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3579509:3579615 [1] NCCL INFO NCCL_IB_DISABLE set by environment to 0.
+t0016:3579509:3579615 [1] NCCL INFO NCCL_SOCKET_IFNAME set by environment to ib0
+t0016:3579508:3579614 [0] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:3579508:3579614 [0] NCCL INFO Using non-device net plugin version 0
+t0016:3579508:3579614 [0] NCCL INFO Using network IB
+t0016:3579509:3579615 [1] NCCL INFO NET/IB : Using [0]mlx5_0:1/IB [1]mlx5_1:1/IB [2]mlx5_2:1/IB [3]mlx5_3:1/IB [RO]; OOB ib0:172.23.16.16<0>
+t0016:3579509:3579615 [1] NCCL INFO Using non-device net plugin version 0
+t0016:3579509:3579615 [1] NCCL INFO Using network IB
+t0016:3579509:3579615 [1] NCCL INFO ncclCommInitRank comm 0x561a60618d10 rank 3 nranks 4 cudaDev 1 nvmlDev 1 busId 8d000 commId 0xaec52ac0e36a06b7 - Init START
+t0001:1351106:1351220 [0] NCCL INFO ncclCommInitRank comm 0x5648fc4a4590 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 47000 commId 0xaec52ac0e36a06b7 - Init START
+t0016:3579508:3579614 [0] NCCL INFO ncclCommInitRank comm 0x564cfc164820 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId a000 commId 0xaec52ac0e36a06b7 - Init START
+t0001:1351107:1351221 [1] NCCL INFO ncclCommInitRank comm 0x5638a414c080 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 87000 commId 0xaec52ac0e36a06b7 - Init START
+t0001:1351106:1351220 [0] NCCL INFO Setting affinity for GPU 0 to 3c0000
+t0001:1351106:1351220 [0] NCCL INFO comm 0x5648fc4a4590 rank 0 nRanks 4 nNodes 2 localRanks 2 localRank 0 MNNVL 0
+t0001:1351107:1351221 [1] NCCL INFO comm 0x5638a414c080 rank 1 nRanks 4 nNodes 2 localRanks 2 localRank 1 MNNVL 0
+t0016:3579509:3579615 [1] NCCL INFO comm 0x561a60618d10 rank 3 nRanks 4 nNodes 2 localRanks 2 localRank 1 MNNVL 0
+t0016:3579508:3579614 [0] NCCL INFO comm 0x564cfc164820 rank 2 nRanks 4 nNodes 2 localRanks 2 localRank 0 MNNVL 0
+t0016:3579509:3579615 [1] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+t0016:3579509:3579615 [1] NCCL INFO P2P Chunksize set to 131072
+t0016:3579508:3579614 [0] NCCL INFO Trees [0] 3/-1/-1->2->0 [1] 3/0/-1->2->-1
+t0016:3579508:3579614 [0] NCCL INFO P2P Chunksize set to 131072
+t0001:1351106:1351220 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+t0001:1351106:1351220 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+t0001:1351107:1351221 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+t0001:1351106:1351220 [0] NCCL INFO Trees [0] 1/2/-1->0->-1 [1] 1/-1/-1->0->2
+t0001:1351107:1351221 [1] NCCL INFO P2P Chunksize set to 131072
+t0001:1351106:1351220 [0] NCCL INFO P2P Chunksize set to 131072
+t0016:3579508:3579614 [0] NCCL INFO Channel 00/0 : 1[1] -> 2[0] [receive] via NET/IB/1
+t0016:3579508:3579614 [0] NCCL INFO Channel 01/0 : 1[1] -> 2[0] [receive] via NET/IB/1
+t0016:3579508:3579614 [0] NCCL INFO Channel 00/0 : 2[0] -> 3[1] via P2P/CUMEM/read
+t0016:3579509:3579615 [1] NCCL INFO Channel 00/0 : 3[1] -> 0[0] [send] via NET/IB/3
+t0016:3579509:3579615 [1] NCCL INFO Channel 01/0 : 3[1] -> 0[0] [send] via NET/IB/3
+t0016:3579508:3579614 [0] NCCL INFO Channel 01/0 : 2[0] -> 3[1] via P2P/CUMEM/read
+t0001:1351106:1351220 [0] NCCL INFO Channel 00/0 : 3[1] -> 0[0] [receive] via NET/IB/0
+t0001:1351107:1351221 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[0] [send] via NET/IB/3
+t0001:1351107:1351221 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[0] [send] via NET/IB/3
+t0001:1351106:1351220 [0] NCCL INFO Channel 01/0 : 3[1] -> 0[0] [receive] via NET/IB/0
+t0001:1351106:1351220 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0001:1351106:1351220 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0001:1351106:1351220 [0] NCCL INFO Connected all rings
+t0016:3579509:3579615 [1] NCCL INFO Connected all rings
+t0016:3579509:3579615 [1] NCCL INFO Channel 00/0 : 3[1] -> 2[0] via P2P/CUMEM/read
+t0016:3579508:3579614 [0] NCCL INFO Connected all rings
+t0001:1351107:1351221 [1] NCCL INFO Connected all rings
+t0001:1351106:1351220 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [receive] via NET/IB/1
+t0016:3579508:3579614 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [receive] via NET/IB/0
+t0001:1351107:1351221 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:3579508:3579614 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[0] [receive] via NET/IB/0
+t0001:1351106:1351220 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] [receive] via NET/IB/1
+t0001:1351106:1351220 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [send] via NET/IB/1
+t0016:3579508:3579614 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [send] via NET/IB/0
+t0016:3579508:3579614 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] [send] via NET/IB/0
+t0001:1351106:1351220 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[0] [send] via NET/IB/1
+t0001:1351107:1351221 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0016:3579509:3579615 [1] NCCL INFO Channel 01/0 : 3[1] -> 2[0] via P2P/CUMEM/read
+t0001:1351106:1351220 [0] NCCL INFO Connected all trees
+t0001:1351107:1351221 [1] NCCL INFO Connected all trees
+t0016:3579508:3579614 [0] NCCL INFO Connected all trees
+t0016:3579509:3579615 [1] NCCL INFO Connected all trees
+t0016:3579508:3579614 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0016:3579508:3579614 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0016:3579509:3579615 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0016:3579509:3579615 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0001:1351107:1351221 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0001:1351107:1351221 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0001:1351106:1351220 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0001:1351106:1351220 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0016:3579509:3579615 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:3579508:3579614 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0016:3579508:3579614 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:3579509:3579615 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0016:3579508:3579614 [0] NCCL INFO ncclCommInitRank comm 0x564cfc164820 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId a000 commId 0xaec52ac0e36a06b7 - Init COMPLETE
+t0016:3579509:3579615 [1] NCCL INFO ncclCommInitRank comm 0x561a60618d10 rank 3 nranks 4 cudaDev 1 nvmlDev 1 busId 8d000 commId 0xaec52ac0e36a06b7 - Init COMPLETE
+t0001:1351106:1351220 [0] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0001:1351106:1351220 [0] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0001:1351106:1351220 [0] NCCL INFO ncclCommInitRank comm 0x5648fc4a4590 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 47000 commId 0xaec52ac0e36a06b7 - Init COMPLETE
+t0001:1351107:1351221 [1] NCCL INFO TUNER/Plugin: Plugin load returned 2 : libnccl-net.so: cannot open shared object file: No such file or directory : when loading libnccl-tuner.so
+t0001:1351107:1351221 [1] NCCL INFO TUNER/Plugin: Using internal tuner plugin.
+t0001:1351107:1351221 [1] NCCL INFO ncclCommInitRank comm 0x5638a414c080 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 87000 commId 0xaec52ac0e36a06b7 - Init COMPLETE
+t0001:1351106:1351420 [0] NCCL INFO Using non-device net plugin version 0
+t0001:1351106:1351420 [0] NCCL INFO Using network IB
+t0001:1351107:1351423 [1] NCCL INFO Using non-device net plugin version 0
+t0001:1351107:1351423 [1] NCCL INFO Using network IB
+t0016:3579509:3579752 [1] NCCL INFO Using non-device net plugin version 0
+t0016:3579508:3579751 [0] NCCL INFO Using non-device net plugin version 0
+t0016:3579509:3579752 [1] NCCL INFO Using network IB
+t0016:3579508:3579751 [0] NCCL INFO Using network IB
+t0016:3579509:3579752 [1] NCCL INFO bootstrapSplit: comm 0x561a6e234920 parent 0x561a60618d10 rank 3 nranks 4 color 116666945 key 3 prev 2 next 0 - DONE
+t0016:3579508:3579751 [0] NCCL INFO bootstrapSplit: comm 0x564d0b4bd8e0 parent 0x564cfc164820 rank 2 nranks 4 color 116666945 key 2 prev 1 next 3 - DONE
+t0016:3579509:3579752 [1] NCCL INFO ncclCommSplit comm 0x561a6e234920 rank 3 nranks 4 cudaDev 1 nvmlDev 1 busId 8d000 parent 0x561a60618d10 color 116666945 key 3 commId 0x5493ce4d06d68a41 - Init START
+t0016:3579508:3579751 [0] NCCL INFO ncclCommSplit comm 0x564d0b4bd8e0 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId a000 parent 0x564cfc164820 color 116666945 key 2 commId 0x5493ce4d06d68a41 - Init START
+t0001:1351107:1351423 [1] NCCL INFO bootstrapSplit: comm 0x5638b4479080 parent 0x5638a414c080 rank 1 nranks 4 color 116666945 key 1 prev 0 next 2 - DONE
+t0001:1351106:1351420 [0] NCCL INFO bootstrapSplit: comm 0x56490cc6b9a0 parent 0x5648fc4a4590 rank 0 nranks 4 color 116666945 key 0 prev 3 next 1 - DONE
+t0001:1351106:1351420 [0] NCCL INFO ncclCommSplit comm 0x56490cc6b9a0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 47000 parent 0x5648fc4a4590 color 116666945 key 0 commId 0x5493ce4d06d68a41 - Init START
+t0001:1351107:1351423 [1] NCCL INFO ncclCommSplit comm 0x5638b4479080 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 87000 parent 0x5638a414c080 color 116666945 key 1 commId 0x5493ce4d06d68a41 - Init START
+t0001:1351106:1351420 [0] NCCL INFO Setting affinity for GPU 0 to 3c0000
+t0001:1351106:1351420 [0] NCCL INFO comm 0x56490cc6b9a0 rank 0 nRanks 4 nNodes 2 localRanks 2 localRank 0 MNNVL 0
+t0001:1351107:1351423 [1] NCCL INFO comm 0x5638b4479080 rank 1 nRanks 4 nNodes 2 localRanks 2 localRank 1 MNNVL 0
+t0016:3579509:3579752 [1] NCCL INFO comm 0x561a6e234920 rank 3 nRanks 4 nNodes 2 localRanks 2 localRank 1 MNNVL 0
+t0016:3579509:3579752 [1] NCCL INFO Trees [0] -1/-1/-1->3->2 [1] -1/-1/-1->3->2
+t0016:3579508:3579751 [0] NCCL INFO comm 0x564d0b4bd8e0 rank 2 nRanks 4 nNodes 2 localRanks 2 localRank 0 MNNVL 0
+t0016:3579509:3579752 [1] NCCL INFO P2P Chunksize set to 131072
+t0016:3579508:3579751 [0] NCCL INFO Trees [0] 3/-1/-1->2->0 [1] 3/0/-1->2->-1
+t0016:3579508:3579751 [0] NCCL INFO P2P Chunksize set to 131072
+t0001:1351106:1351420 [0] NCCL INFO Channel 00/02 :    0   1   2   3
+t0001:1351106:1351420 [0] NCCL INFO Channel 01/02 :    0   1   2   3
+t0001:1351107:1351423 [1] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] -1/-1/-1->1->0
+t0001:1351106:1351420 [0] NCCL INFO Trees [0] 1/2/-1->0->-1 [1] 1/-1/-1->0->2
+t0001:1351107:1351423 [1] NCCL INFO P2P Chunksize set to 131072
+t0001:1351106:1351420 [0] NCCL INFO P2P Chunksize set to 131072
+t0001:1351106:1351420 [0] NCCL INFO Channel 00/0 : 3[1] -> 0[0] [receive] via NET/IB/0
+t0001:1351106:1351420 [0] NCCL INFO Channel 01/0 : 3[1] -> 0[0] [receive] via NET/IB/0
+t0001:1351106:1351420 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0001:1351107:1351423 [1] NCCL INFO Channel 00/0 : 1[1] -> 2[0] [send] via NET/IB/3
+t0001:1351107:1351423 [1] NCCL INFO Channel 01/0 : 1[1] -> 2[0] [send] via NET/IB/3
+t0001:1351106:1351420 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[1] via P2P/CUMEM/read
+t0016:3579508:3579751 [0] NCCL INFO Channel 00/0 : 1[1] -> 2[0] [receive] via NET/IB/1
+t0016:3579508:3579751 [0] NCCL INFO Channel 01/0 : 1[1] -> 2[0] [receive] via NET/IB/1
+t0016:3579508:3579751 [0] NCCL INFO Channel 00/0 : 2[0] -> 3[1] via P2P/CUMEM/read
+t0016:3579508:3579751 [0] NCCL INFO Channel 01/0 : 2[0] -> 3[1] via P2P/CUMEM/read
+t0016:3579509:3579752 [1] NCCL INFO Channel 00/0 : 3[1] -> 0[0] [send] via NET/IB/3
+t0016:3579509:3579752 [1] NCCL INFO Channel 01/0 : 3[1] -> 0[0] [send] via NET/IB/3
+t0016:3579508:3579751 [0] NCCL INFO Connected all rings
+t0016:3579508:3579751 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [receive] via NET/IB/0
+t0016:3579508:3579751 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[0] [receive] via NET/IB/0
+t0016:3579508:3579751 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [send] via NET/IB/0
+t0016:3579508:3579751 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] [send] via NET/IB/0
+t0001:1351107:1351423 [1] NCCL INFO Connected all rings
+t0001:1351107:1351423 [1] NCCL INFO Channel 00/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0001:1351106:1351420 [0] NCCL INFO Connected all rings
+t0016:3579509:3579752 [1] NCCL INFO Connected all rings
+t0016:3579509:3579752 [1] NCCL INFO Channel 00/0 : 3[1] -> 2[0] via P2P/CUMEM/read
+t0001:1351106:1351420 [0] NCCL INFO Channel 00/0 : 2[0] -> 0[0] [receive] via NET/IB/1
+t0001:1351106:1351420 [0] NCCL INFO Channel 01/0 : 2[0] -> 0[0] [receive] via NET/IB/1
+t0001:1351106:1351420 [0] NCCL INFO Channel 00/0 : 0[0] -> 2[0] [send] via NET/IB/1
+t0001:1351106:1351420 [0] NCCL INFO Channel 01/0 : 0[0] -> 2[0] [send] via NET/IB/1
+t0016:3579509:3579752 [1] NCCL INFO Channel 01/0 : 3[1] -> 2[0] via P2P/CUMEM/read
+t0001:1351107:1351423 [1] NCCL INFO Channel 01/0 : 1[1] -> 0[0] via P2P/CUMEM/read
+t0001:1351107:1351423 [1] NCCL INFO Connected all trees
+t0001:1351106:1351420 [0] NCCL INFO Connected all trees
+t0001:1351107:1351423 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0001:1351107:1351423 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0001:1351106:1351420 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0001:1351106:1351420 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0016:3579508:3579751 [0] NCCL INFO Connected all trees
+t0016:3579509:3579752 [1] NCCL INFO Connected all trees
+t0016:3579509:3579752 [1] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0016:3579509:3579752 [1] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0016:3579508:3579751 [0] NCCL INFO threadThresholds 8/8/64 | 32/8/64 | 512 | 512
+t0016:3579508:3579751 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 2 p2p channels per peer
+t0001:1351106:1351420 [0] NCCL INFO ncclCommSplit comm 0x56490cc6b9a0 rank 0 nranks 4 cudaDev 0 nvmlDev 0 busId 47000 parent 0x5648fc4a4590 color 116666945 key 0 commId 0x5493ce4d06d68a41 - Init COMPLETE
+t0001:1351107:1351423 [1] NCCL INFO ncclCommSplit comm 0x5638b4479080 rank 1 nranks 4 cudaDev 1 nvmlDev 1 busId 87000 parent 0x5638a414c080 color 116666945 key 1 commId 0x5493ce4d06d68a41 - Init COMPLETE
+t0016:3579508:3579751 [0] NCCL INFO ncclCommSplit comm 0x564d0b4bd8e0 rank 2 nranks 4 cudaDev 0 nvmlDev 0 busId a000 parent 0x564cfc164820 color 116666945 key 2 commId 0x5493ce4d06d68a41 - Init COMPLETE
+t0016:3579509:3579752 [1] NCCL INFO ncclCommSplit comm 0x561a6e234920 rank 3 nranks 4 cudaDev 1 nvmlDev 1 busId 8d000 parent 0x561a60618d10 color 116666945 key 3 commId 0x5493ce4d06d68a41 - Init COMPLETE
+{'loss': '6.684', 'grad_norm': '29.54', 'learning_rate': '4.923e-05', 'epoch': '0.01718'}
+{'loss': '5.555', 'grad_norm': '18.01', 'learning_rate': '4.837e-05', 'epoch': '0.03436'}
+{'loss': '5.314', 'grad_norm': '13.79', 'learning_rate': '4.751e-05', 'epoch': '0.05155'}
+{'loss': '5.238', 'grad_norm': '9.536', 'learning_rate': '4.665e-05', 'epoch': '0.06873'}
+{'loss': '5.144', 'grad_norm': '9.766', 'learning_rate': '4.579e-05', 'epoch': '0.08591'}
+{'loss': '5.199', 'grad_norm': '8.376', 'learning_rate': '4.493e-05', 'epoch': '0.1031'}
+{'loss': '5.068', 'grad_norm': '9.241', 'learning_rate': '4.407e-05', 'epoch': '0.1203'}
+{'loss': '5.094', 'grad_norm': '8.302', 'learning_rate': '4.321e-05', 'epoch': '0.1375'}
+{'loss': '5.016', 'grad_norm': '8.52', 'learning_rate': '4.235e-05', 'epoch': '0.1546'}
+{'loss': '4.878', 'grad_norm': '7.82', 'learning_rate': '4.149e-05', 'epoch': '0.1718'}
+{'loss': '4.911', 'grad_norm': '9.097', 'learning_rate': '4.064e-05', 'epoch': '0.189'}
+{'loss': '4.87', 'grad_norm': '8.625', 'learning_rate': '3.978e-05', 'epoch': '0.2062'}
+{'loss': '4.875', 'grad_norm': '7.378', 'learning_rate': '3.892e-05', 'epoch': '0.2234'}
+{'loss': '4.804', 'grad_norm': '7.32', 'learning_rate': '3.806e-05', 'epoch': '0.2405'}
+{'loss': '4.772', 'grad_norm': '7.097', 'learning_rate': '3.72e-05', 'epoch': '0.2577'}
+{'loss': '4.878', 'grad_norm': '7.124', 'learning_rate': '3.634e-05', 'epoch': '0.2749'}
+{'loss': '4.798', 'grad_norm': '6.345', 'learning_rate': '3.548e-05', 'epoch': '0.2921'}
+{'loss': '4.864', 'grad_norm': '6.648', 'learning_rate': '3.462e-05', 'epoch': '0.3093'}
+{'loss': '4.825', 'grad_norm': '6.679', 'learning_rate': '3.376e-05', 'epoch': '0.3265'}
+{'loss': '4.689', 'grad_norm': '6.729', 'learning_rate': '3.29e-05', 'epoch': '0.3436'}
+{'loss': '4.702', 'grad_norm': '6.933', 'learning_rate': '3.204e-05', 'epoch': '0.3608'}
+{'loss': '4.735', 'grad_norm': '7.602', 'learning_rate': '3.119e-05', 'epoch': '0.378'}
+{'loss': '4.761', 'grad_norm': '6.483', 'learning_rate': '3.033e-05', 'epoch': '0.3952'}
+{'loss': '4.691', 'grad_norm': '6.123', 'learning_rate': '2.947e-05', 'epoch': '0.4124'}
+{'loss': '4.715', 'grad_norm': '6.479', 'learning_rate': '2.861e-05', 'epoch': '0.4296'}
+{'loss': '4.667', 'grad_norm': '6.538', 'learning_rate': '2.775e-05', 'epoch': '0.4467'}
+{'loss': '4.634', 'grad_norm': '7.363', 'learning_rate': '2.689e-05', 'epoch': '0.4639'}
+{'loss': '4.661', 'grad_norm': '6.637', 'learning_rate': '2.603e-05', 'epoch': '0.4811'}
+{'loss': '4.621', 'grad_norm': '6.026', 'learning_rate': '2.517e-05', 'epoch': '0.4983'}
+{'loss': '4.569', 'grad_norm': '6.169', 'learning_rate': '2.431e-05', 'epoch': '0.5155'}
+{'loss': '4.722', 'grad_norm': '6.558', 'learning_rate': '2.345e-05', 'epoch': '0.5326'}
+{'loss': '4.598', 'grad_norm': '5.915', 'learning_rate': '2.259e-05', 'epoch': '0.5498'}
+{'loss': '4.582', 'grad_norm': '6.683', 'learning_rate': '2.174e-05', 'epoch': '0.567'}
+{'loss': '4.562', 'grad_norm': '5.959', 'learning_rate': '2.088e-05', 'epoch': '0.5842'}
+{'loss': '4.554', 'grad_norm': '5.678', 'learning_rate': '2.002e-05', 'epoch': '0.6014'}
+{'loss': '4.619', 'grad_norm': '5.832', 'learning_rate': '1.916e-05', 'epoch': '0.6186'}
+{'loss': '4.633', 'grad_norm': '5.834', 'learning_rate': '1.83e-05', 'epoch': '0.6357'}
+{'loss': '4.551', 'grad_norm': '6.43', 'learning_rate': '1.744e-05', 'epoch': '0.6529'}
+{'loss': '4.574', 'grad_norm': '6.111', 'learning_rate': '1.658e-05', 'epoch': '0.6701'}
+{'loss': '4.435', 'grad_norm': '7.114', 'learning_rate': '1.572e-05', 'epoch': '0.6873'}
+{'loss': '4.537', 'grad_norm': '5.522', 'learning_rate': '1.486e-05', 'epoch': '0.7045'}
+{'loss': '4.506', 'grad_norm': '5.542', 'learning_rate': '1.4e-05', 'epoch': '0.7216'}
+{'loss': '4.494', 'grad_norm': '6.325', 'learning_rate': '1.314e-05', 'epoch': '0.7388'}
+{'loss': '4.483', 'grad_norm': '5.956', 'learning_rate': '1.229e-05', 'epoch': '0.756'}
+{'loss': '4.447', 'grad_norm': '5.649', 'learning_rate': '1.143e-05', 'epoch': '0.7732'}
+{'loss': '4.52', 'grad_norm': '6.096', 'learning_rate': '1.057e-05', 'epoch': '0.7904'}
+{'loss': '4.571', 'grad_norm': '6.049', 'learning_rate': '9.708e-06', 'epoch': '0.8076'}
+{'loss': '4.483', 'grad_norm': '5.612', 'learning_rate': '8.849e-06', 'epoch': '0.8247'}
+{'loss': '4.451', 'grad_norm': '5.502', 'learning_rate': '7.99e-06', 'epoch': '0.8419'}
+{'loss': '4.416', 'grad_norm': '5.758', 'learning_rate': '7.131e-06', 'epoch': '0.8591'}
+{'loss': '4.332', 'grad_norm': '5.799', 'learning_rate': '6.271e-06', 'epoch': '0.8763'}
+{'loss': '4.352', 'grad_norm': '5.621', 'learning_rate': '5.412e-06', 'epoch': '0.8935'}
+{'loss': '4.422', 'grad_norm': '5.879', 'learning_rate': '4.553e-06', 'epoch': '0.9107'}
+{'loss': '4.336', 'grad_norm': '5.712', 'learning_rate': '3.694e-06', 'epoch': '0.9278'}
+{'loss': '4.481', 'grad_norm': '5.449', 'learning_rate': '2.835e-06', 'epoch': '0.945'}
+{'loss': '4.417', 'grad_norm': '5.449', 'learning_rate': '1.976e-06', 'epoch': '0.9622'}
+{'loss': '4.39', 'grad_norm': '5.414', 'learning_rate': '1.117e-06', 'epoch': '0.9794'}
+{'loss': '4.396', 'grad_norm': '5.744', 'learning_rate': '2.577e-07', 'epoch': '0.9966'}
+{'train_runtime': '851.5', 'train_samples_per_second': '5.466', 'train_steps_per_second': '0.684', 'train_loss': '4.725', 'epoch': '1'}
