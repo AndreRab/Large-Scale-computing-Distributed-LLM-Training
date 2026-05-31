@@ -202,32 +202,35 @@ precision, and full state dict checkpointing.
 ## Results: One-Epoch Comparison
 
 Both methods were prepared for the same type of one-epoch language-model
-fine-tuning task. The important result is that the training behavior is close:
-the loss moves into the same range, while the implementation style is very
-different.
+fine-tuning task. The log files show that both methods completed the epoch, but
+the measured runtime and final loss differ. In this run, native PyTorch FSDP was
+faster and reached a lower final loss, while the implementation style remained
+much more manual than the DeepSpeed `Trainer` workflow.
 
 | Method | Training result | Speed result | What it shows |
 | --- | ---: | ---: | --- |
-| DeepSpeed ZeRO-3 + `Trainer` | `4.837` training loss | `127.7 s`, `36.45 samples/s` | Clean high-level distributed training with minimal code changes |
-| Native PyTorch FSDP | `4.78` training loss | `130.5 s`, similar step scale | Similar optimization behavior with more manual distributed code |
+| DeepSpeed ZeRO-3 + `Trainer` | `4.725` training loss | `851.5 s`, `5.466 samples/s` | Clean high-level distributed training with minimal code changes |
+| Native PyTorch FSDP | `4.2292` final training loss | `752.1 s`, `6.19 samples/s` | Better measured result in this run, with more manual distributed code |
 
 The run summary:
 
 ```text
 DeepSpeed ZeRO-3:
-  train_runtime = 127.7 s
-  train_samples_per_second = 36.45
-  train_steps_per_second = 1.144
-  train_loss = 4.837
+  train_runtime = 851.5 s
+  train_samples_per_second = 5.466
+  train_steps_per_second = 0.684
+  train_loss = 4.725
 
 Native PyTorch FSDP:
-  train_runtime = 130.5 s
-  train_loss = 4.78
+  total_training_time = 752.1 s
+  training_speed = 6.19 samples/s
+  final_training_loss = 4.2292
 ```
 
-The training quality is very similar. The practical difference is the developer
-experience: how much code and configuration must be managed to run the same
-training objective at scale.
+The practical difference is still strongly about developer experience: how much
+code and configuration must be managed to run the same training objective at
+scale. The measured run also shows that implementation choices and runtime
+configuration can have a large performance impact.
 
 ### Speed interpretation
 
@@ -236,8 +239,8 @@ care about throughput, memory pressure, and communication overhead.
 
 | Method | Runtime view | Throughput view | Memory view | Speed tradeoff |
 | --- | --- | --- | --- | --- |
-| DeepSpeed ZeRO-3 + `Trainer` | `127.7 s` for one epoch | `36.45 samples/s` and `1.144 steps/s` | Strong memory reduction through ZeRO-3 partitioning and CPU offload | Offload can make larger models fit, but CPU transfers may reduce raw speed |
-| Native PyTorch FSDP | `130.5 s` for one epoch | Similar step scale | Strong memory reduction through full sharding | More direct PyTorch control, but all-gather/reduce-scatter communication can dominate |
+| DeepSpeed ZeRO-3 + `Trainer` | `851.5 s` for one epoch | `5.466 samples/s` and `0.684 steps/s` | Strong memory reduction through ZeRO-3 partitioning and CPU offload | Offload can make larger models fit, but CPU transfers may reduce raw speed |
+| Native PyTorch FSDP | `752.1 s` for one epoch | `6.19 samples/s` | Strong memory reduction through full sharding | More direct PyTorch control, but all-gather/reduce-scatter communication can dominate |
 
 The fastest-looking method is not always the most useful one. For large models,
 the first success criterion is often "does it fit in GPU memory?" Once the
@@ -265,9 +268,11 @@ path.
 
 ## Conclusion
 
-Both distributed methods reach very similar loss after one epoch because they
-optimize the same model on the same data. In practice, the main difference is
-not model quality, but how much code and configuration the user must manage.
+Both distributed methods complete the same one-epoch fine-tuning task on the
+same model and data. In the recorded logs, FSDP finishes faster and with lower
+final loss, while DeepSpeed keeps the training code closer to the normal
+Transformers `Trainer` workflow. In practice, the comparison is not only model
+quality, but also how much code and configuration the user must manage.
 
 **DeepSpeed ZeRO-3 is the easiest path from normal Transformers training to
 large-model distributed training.** It keeps the `Trainer` workflow and moves
