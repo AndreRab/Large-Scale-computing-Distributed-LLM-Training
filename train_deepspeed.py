@@ -9,33 +9,32 @@ Athena (PL‑Grid) cluster but does not depend on any cluster
 specifics—it will run anywhere you have Python, PyTorch and
 DeepSpeed installed.
 
-To run on multiple GPU nodes managed by SLURM, you can either invoke
-the DeepSpeed launcher directly or wrap it with ``srun``.  An
-example SLURM batch script is provided in ``sbatch_deepspeed.sh``.  On
-the head node, you would execute something like:
+To run on multiple GPU nodes managed by SLURM, we recommend using
+``torchrun`` wrapped with ``srun``. An example SLURM batch script
+is provided in ``sbatch_deepspeed.sh``. You would execute something like:
 
-    srun --nodes=$SLURM_NNODES --ntasks‑per‑node=1 \ 
-         deepspeed --num_gpus $SLURM_GPUS_PER_NODE --num_nodes $SLURM_NNODES \
-         --master_addr $MASTER_ADDR --master_port $MASTER_PORT \ 
-         train_deepspeed.py --model_name bigscience/bloom-3b --dataset_name wikitext \
-         --dataset_config wikitext-2-raw-v1 --epochs 1 --deepspeed_config ds_config_zero3.json
+    srun torchrun \
+      --nnodes $SLURM_NNODES \
+      --nproc_per_node $SLURM_GPUS_PER_NODE \
+      --rdzv_id $SLURM_JOB_ID \
+      --rdzv_backend c10d \
+      --rdzv_endpoint $MASTER_ADDR:$MASTER_PORT \
+      train_deepspeed.py --model_name bigscience/bloom-3b --dataset_name wikitext \
+      --dataset_config wikitext-2-raw-v1 --epochs 1 --deepspeed_config ds_config_zero3.json
 
-The script tokenises a text dataset for causal language modelling, builds a
-``Trainer`` and passes a ZeRO‑3 configuration file to the ``deepspeed``
-parameter of ``TrainingArguments``.  DeepSpeed and the scheduler will
-take care of launching the distributed processes and establishing
-communications across the cluster.【796659090806970†L108-L116】
+DeepSpeed, torchrun, and the scheduler will take care of launching the distributed
+processes and establishing communications across the cluster.
 """
 
 import argparse
-import os
+import inspect
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, Trainer, TrainingArguments
 from datasets import load_dataset
 
 
 def tokenize_function(examples, tokenizer, block_size: int):
-    """Concatenate and split texts into fixed‑length blocks for causal LM."""
+    """Concatenate and split texts into fixed-length blocks for causal LM."""
     concatenated = tokenizer(examples["text"], return_attention_mask=False, truncation=False)
     input_ids = []
     for ids in concatenated["input_ids"]:
@@ -60,7 +59,7 @@ class CausalDataset(torch.utils.data.Dataset):
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Fine‑tune with DeepSpeed ZeRO‑3")
+    parser = argparse.ArgumentParser(description="Fine-tune with DeepSpeed ZeRO-3")
     parser.add_argument("--model_name", type=str, required=True, help="Hugging Face model identifier")
     parser.add_argument("--dataset_name", type=str, default="wikitext", help="Name of the dataset on the HF hub")
     parser.add_argument("--dataset_config", type=str, default="wikitext-2-raw-v1", help="Dataset configuration (if any)")
@@ -68,9 +67,39 @@ def main() -> None:
     parser.add_argument("--batch_size", type=int, default=2, help="Per device batch size")
     parser.add_argument("--block_size", type=int, default=512, help="Sequence length for language modelling")
     parser.add_argument("--deepspeed_config", type=str, required=True, help="Path to the DeepSpeed JSON config file")
-    parser.add_argument("--output_dir", type=str, default="./ds_output", help="Where to save the fine‑tuned model")
-    parser.add_argument("--fp16", action="store_true", help="Enable FP16 mixed precision")
+    parser.add_argument("--output_dir", type=str, default="./ds_output", help="Where to save the fine-tuned model")
+    parser.add_argument("--bf16", action="store_true", help="Enable BF16 mixed precision")
+    parser.add_argument("--max_steps", type=int, default=-1, help="Stop after this many optimizer steps; useful for cluster smoke tests")
+    parser.add_argument("--lr", type=float, default=5e-5, help="Learning rate")
     args = parser.parse_args()
+
+    # Define training arguments; the deepspeed config enables ZeRO‑3.  We
+    # disable reporting to external trackers like WandB by passing an
+    # empty list to ``report_to``.  Mixed precision can be enabled
+    # globally via the ``bf16`` flag.
+    training_arg_values = {
+        "output_dir": args.output_dir,
+        "overwrite_output_dir": True,
+        "per_device_train_batch_size": args.batch_size,
+        "num_train_epochs": args.epochs,
+        "gradient_accumulation_steps": 1,
+        "learning_rate": args.lr,
+        "logging_steps": 10,
+        "bf16": args.bf16,
+        "deepspeed": args.deepspeed_config,
+        "report_to": [],
+        "max_steps": args.max_steps,
+    }
+
+    supported_args = set(inspect.signature(TrainingArguments.__init__).parameters)
+    unsupported_args = sorted(set(training_arg_values) - supported_args)
+    
+    if unsupported_args:
+        print(f"Skipping unsupported TrainingArguments: {unsupported_args}")
+        
+    training_args = TrainingArguments(
+        **{key: value for key, value in training_arg_values.items() if key in supported_args}
+    )
 
     # Load tokenizer and model.  We intentionally avoid automatic
     # sharding or wrapping here because DeepSpeed handles parameter
@@ -91,28 +120,14 @@ def main() -> None:
     sequences = [torch.tensor(s, dtype=torch.long) for s in tokenised["input_ids"]]
     train_dataset = CausalDataset(sequences)
 
-    # Define training arguments; the deepspeed config enables ZeRO‑3.  We
-    # disable reporting to external trackers like WandB by passing an
-    # empty list to ``report_to``.  Mixed precision can be enabled
-    # globally via the ``fp16`` flag.
-    training_args = TrainingArguments(
-        output_dir=args.output_dir,
-        overwrite_output_dir=True,
-        per_device_train_batch_size=args.batch_size,
-        num_train_epochs=args.epochs,
-        gradient_accumulation_steps=1,
-        logging_steps=10,
-        fp16=args.fp16,
-        deepspeed=args.deepspeed_config,
-        report_to=[],
-    )
-
     trainer = Trainer(
         model=model,
         args=training_args,
         train_dataset=train_dataset,
     )
+    
     trainer.train()
+    
     # Save the resulting model and tokenizer
     trainer.save_model(args.output_dir)
     tokenizer.save_pretrained(args.output_dir)
