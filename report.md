@@ -27,6 +27,9 @@ in data or architecture.
 
 | Item | Value |
 | --- | --- |
+| **Hardware environment** | **Athena cluster (PL-Grid)** |
+| **Compute allocation** | **2 nodes (2 GPUs per node)** |
+| **GPU specifications** | **4x NVIDIA A100 (40GB VRAM)** |
 | Model | `bigscience/bloom-3b` |
 | Task | Causal language modeling |
 | Dataset | `wikitext` |
@@ -277,6 +280,17 @@ The practical difference is still strongly about developer experience: how much
 code and configuration must be managed to run the same training objective at
 scale. The measured run also shows that implementation choices and runtime
 configuration can have a large performance impact.
+
+### Memory Profiling and Host RAM Usage
+
+While both DeepSpeed ZeRO-3 and native FSDP successfully completed the training, fine-grained GPU memory (VRAM) profiling was not explicitly logged during this run. By default, PyTorch and Hugging Face `Trainer` do not natively dump peak VRAM allocation to standard outputs unless explicitly configured in the training loop (e.g., using `torch.cuda.max_memory_allocated()` or `trainer.save_metrics()`). 
+
+However, we can analyze the node-level host memory usage (System RAM) recorded by the SLURM workload manager (`sacct`). The peak memory footprints (`MaxRSS`) for the `torchrun` processes were as follows:
+
+* **DeepSpeed ZeRO-3:** `18.59 GB` (18,591,408 KB)
+* **Native PyTorch FSDP:** `18.47 GB` (18,470,076 KB)
+
+**Summary:** The system RAM consumption is almost identical between the two methods. This is expected, as both methods load the same 3B parameter model and the same dataset into host memory before distributing and sharding the state across the GPUs. For future experiments, implementing telemetry tools like Weights & Biases (W&B) or explicit VRAM tracking hooks is recommended to directly compare the GPU memory efficiency of FSDP sharding versus ZeRO-3 partitioning.
 
 ### Speed interpretation
 
