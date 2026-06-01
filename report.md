@@ -162,12 +162,9 @@ assigns each process to a GPU, wraps the model, and runs the training loop.
 
 ```python
 torch.distributed.init_process_group(backend="nccl")
-# added: initialize one distributed process per GPU
-
 local_rank = int(os.environ.get("LOCAL_RANK", 0))
 torch.cuda.set_device(local_rank)
 device = torch.device("cuda", local_rank)
-# added: bind each process to its local GPU
 
 dtype = torch.bfloat16 if args.bf16 else torch.float32
 model = AutoModelForCausalLM.from_pretrained(
@@ -195,13 +192,13 @@ model = FSDP(
     mixed_precision=mixed_precision,
     use_orig_params=True,
 )
-# added: wrap Bloom blocks with FSDP and shard model state across workers
 ```
 
 The training loop is manual:
 
 ```python
 optimiser = torch.optim.AdamW(model.parameters(), lr=args.lr)
+model.train()
 
 for epoch in range(args.epochs):
     sampler.set_epoch(epoch)
@@ -217,6 +214,9 @@ for epoch in range(args.epochs):
         loss.backward()
         model.clip_grad_norm_(1.0)
         optimiser.step()
+
+        global_loss = loss.detach().clone()
+        torch.distributed.all_reduce(global_loss, op=torch.distributed.ReduceOp.AVG)
 ```
 
 Native FSDP gives more control over the distributed training details, but it
