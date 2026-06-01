@@ -80,14 +80,23 @@ stays almost identical to the baseline. The important change is the
 `deepspeed` argument, which points to a JSON configuration file.
 
 ```python
+training_arg_values = {
+    "output_dir": args.output_dir,
+    "overwrite_output_dir": True,
+    "per_device_train_batch_size": args.batch_size,
+    "num_train_epochs": args.epochs,
+    "gradient_accumulation_steps": 1,
+    "learning_rate": args.lr,
+    "logging_steps": 10,
+    "bf16": args.bf16,
+    "deepspeed": args.deepspeed_config,
+    "report_to": [],
+    "max_steps": args.max_steps,
+}
+
+supported_args = set(inspect.signature(TrainingArguments.__init__).parameters)
 training_args = TrainingArguments(
-    output_dir="./outputs/deepspeed",
-    per_device_train_batch_size=2,
-    num_train_epochs=1,
-    logging_steps=10,
-    fp16=True,                         # added: mixed precision
-    deepspeed="ds_config_zero3.json",  # added: ZeRO-3 distributed config
-    report_to=[],
+    **{key: value for key, value in training_arg_values.items() if key in supported_args}
 )
 
 trainer = Trainer(
@@ -113,21 +122,34 @@ contains the important distributed-memory decisions:
 
 ```json
 {
-  "train_micro_batch_size_per_gpu": 1,
+  "train_batch_size": "auto",
+  "train_micro_batch_size_per_gpu": "auto",
+  "gradient_accumulation_steps": "auto",
+  "steps_per_print": 10,
+  "gradient_clipping": 1.0,
   "zero_optimization": {
     "stage": 3,
-    "offload_param": { "device": "cpu", "pin_memory": true },
-    "offload_optimizer": { "device": "cpu", "pin_memory": true },
-    "overlap_comm": true
+    "contiguous_gradients": true,
+    "overlap_comm": true,
+    "reduce_scatter": true,
+    "reduce_bucket_size": 500000000,
+    "stage3_prefetch_bucket_size": 500000000,
+    "stage3_param_persistence_threshold": 1000000,
+    "sub_group_size": 1e9,
+    "stage3_gather_16bit_weights_on_model_save": true
   },
-  "fp16": { "enabled": true }
+  "fp16": { "enabled": false },
+  "bf16": { "enabled": true },
+  "wall_clock_breakdown": false
 }
 ```
 
 The most important setting is `"stage": 3`. According to the DeepSpeed ZeRO
 documentation, Stage 3 partitions the optimizer states, gradients, and model
 parameters across data-parallel workers, which is why it can reduce per-GPU
-memory enough for larger models.
+memory enough for larger models. In the current configuration, batch sizes are
+left on `"auto"`, BF16 mixed precision is enabled, and CPU/NVMe offload is not
+enabled.
 
 ## Method 2: Native PyTorch FSDP
 
@@ -139,25 +161,46 @@ assigns each process to a GPU, wraps the model, and runs the training loop.
 torch.distributed.init_process_group(backend="nccl")
 # added: initialize one distributed process per GPU
 
-local_rank = int(os.environ["LOCAL_RANK"])
+local_rank = int(os.environ.get("LOCAL_RANK", 0))
 torch.cuda.set_device(local_rank)
 device = torch.device("cuda", local_rank)
 # added: bind each process to its local GPU
 
+dtype = torch.bfloat16 if args.bf16 else torch.float32
 model = AutoModelForCausalLM.from_pretrained(
-    "bigscience/bloom-3b",
-    torch_dtype=torch.float16,
+    args.model_name,
+    torch_dtype=dtype,
 )
 
-fully_shard(model)
-model.to(device)
-# added: shard model parameters across GPU workers
+auto_wrap_policy = partial(
+    transformer_auto_wrap_policy,
+    transformer_layer_cls={BloomBlock},
+)
+
+mixed_precision = None
+if args.bf16:
+    mixed_precision = MixedPrecision(
+        param_dtype=torch.bfloat16,
+        reduce_dtype=torch.bfloat16,
+        buffer_dtype=torch.bfloat16,
+    )
+
+model = FSDP(
+    model,
+    auto_wrap_policy=auto_wrap_policy,
+    device_id=device,
+    mixed_precision=mixed_precision,
+    use_orig_params=True,
+)
+# added: wrap Bloom blocks with FSDP and shard model state across workers
 ```
 
 The training loop is manual:
 
 ```python
-for epoch in range(epochs):
+optimiser = torch.optim.AdamW(model.parameters(), lr=args.lr)
+
+for epoch in range(args.epochs):
     sampler.set_epoch(epoch)
 
     for step, batch in enumerate(dataloader):
@@ -167,9 +210,10 @@ for epoch in range(epochs):
         outputs = model(input_ids=input_ids, labels=labels)
         loss = outputs.loss
 
-        optimizer.zero_grad()
+        optimiser.zero_grad()
         loss.backward()
-        optimizer.step()
+        model.clip_grad_norm_(1.0)
+        optimiser.step()
 ```
 
 Native FSDP gives more control over the distributed training details, but it
@@ -183,8 +227,9 @@ details.
 
 The native PyTorch FSDP script in this project configures FSDP mostly in Python:
 it initializes the NCCL process group, chooses the local GPU, wraps the model
-with `fully_shard(model)`, and runs a manual training loop. Therefore, the
-native script does not need an external JSON config file in the same way that
+with `FullyShardedDataParallel`, uses `transformer_auto_wrap_policy` for
+`BloomBlock` layers, and runs a manual training loop. Therefore, the native
+script does not need an external JSON config file in the same way that
 DeepSpeed does.
 
 PyTorch's FSDP documentation describes this method as a way to shard training
@@ -195,9 +240,10 @@ more communication and more responsibility in the user code.
 
 The repository also contains `fsdp_config.json`. The current native PyTorch
 FSDP script does not load it directly, because its sharding behavior is defined
-in Python with `fully_shard(model)`. The file is still useful as a compact
-reference for the same ideas: full sharding, backward prefetching, mixed
-precision, and full state dict checkpointing.
+in Python with `FSDP(...)`. The file is still useful as a compact reference for
+the same ideas: full sharding, backward prefetching, BF16 mixed precision, and
+state-dict behavior. The running script saves sharded checkpoints with
+`StateDictType.SHARDED_STATE_DICT`.
 
 ## Results: One-Epoch Comparison
 
@@ -239,7 +285,7 @@ care about throughput, memory pressure, and communication overhead.
 
 | Method | Runtime view | Throughput view | Memory view | Speed tradeoff |
 | --- | --- | --- | --- | --- |
-| DeepSpeed ZeRO-3 + `Trainer` | `851.5 s` for one epoch | `5.466 samples/s` and `0.684 steps/s` | Strong memory reduction through ZeRO-3 partitioning and CPU offload | Offload can make larger models fit, but CPU transfers may reduce raw speed |
+| DeepSpeed ZeRO-3 + `Trainer` | `851.5 s` for one epoch | `5.466 samples/s` and `0.684 steps/s` | Strong memory reduction through ZeRO-3 partitioning and BF16 precision | ZeRO-3 reduces replicated state, but communication and checkpoint overhead can reduce raw speed |
 | Native PyTorch FSDP | `752.1 s` for one epoch | `6.19 samples/s` | Strong memory reduction through full sharding | More direct PyTorch control, but all-gather/reduce-scatter communication can dominate |
 
 The fastest-looking method is not always the most useful one. For large models,
@@ -260,7 +306,7 @@ model fits, we compare step time and throughput.
 
 | Method | Pluses | Minuses |
 | --- | --- | --- |
-| DeepSpeed ZeRO-3 + `Trainer` | Minimal Python changes; strong memory savings; good Hugging Face integration; config-driven CPU offload | Adds a DeepSpeed dependency; performance depends heavily on config; CPU offload can slow training if communication or transfer overhead is high |
+| DeepSpeed ZeRO-3 + `Trainer` | Minimal Python changes; strong memory savings; good Hugging Face integration; config-driven ZeRO-3 setup | Adds a DeepSpeed dependency; performance depends heavily on config; communication and checkpointing overhead can slow training |
 | Native PyTorch FSDP | Native PyTorch solution; maximum control over model wrapping, data loading, checkpointing, and training loop; good for custom research code | More code; more distributed details to manage; speed depends on communication efficiency and correct sharding/wrapping choices |
 
 DeepSpeed is usually the easiest path. Native FSDP is the most controllable
